@@ -7,6 +7,7 @@ body{
     background-color: cornflowerblue;
     text-align: center;
     font-size: 1em;
+    transition: all 1.5s ease;
 }
 
 #contenidoPrincipal{
@@ -17,10 +18,140 @@ body{
     background: linear-gradient(rgb(255, 0, 128), rgb(123, 255, 255));
 }
 
+#btncambiarmodo{
+    display: none; /*Esto es para que no se vea el checkbox*/
+}
+
+#iconoluna{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+}
+
+.dark{
+    /*Esta clase es para el body, pero no se pone en el body, se 
+    implementa en JS mdiante el boton para cambiar*/
+    background-color: black;
+    color: black;
+    transition: all 1.5s ease;
+    /*
+    transition: Indica que se aplicará una transición a los cambios de estilo.
+    all: Especifica que se aplicará la transición a todos los estilos que cambien.
+    1.5s: Especifica la duración de la transición. En este caso, será de 1.5 segundos.
+    ease: Es el tipo de transición que se aplicará, en este caso, "ease" describe una transición suave y gradual.
+    */
+}
+
+/*mas estilos para el modo oscuro*/
+.dark #contenidoGlobal{
+    background-color: #333;
+}
+
+.dark h1{
+    color: antiquewhite;
+}
+
+.dark #contenidoPrincipal{
+    background-color: #333;
+}
+
+.dark #contenidoPrincipal h2{
+    color: white;
+}
+
+.dark #contenidoPrincipal h4{
+    color: white;
+}
+
+.dark #contenidoPrincipal p{
+    color: white;
+}
+
+.dark #contenidoPrincipal li{
+    color: white;
+}
+
+.dark #articulo1{
+    background-color: #333;
+    border: 4px solid green;
+    margin-bottom: 20px;
+}
+
+.dark #aside{
+    background-color: #333;
+    border: 4px solid green;
+    margin-bottom: 20px;
+}
+
+.dark #otrosenlaces{
+    background-color: #333;
+}
+
+.dark #otrosenlaces a:visited{
+    color: orange;
+}
+
+.dark #enlacespagina{
+    background-color: #333;
+}
+
+.dark #enlacespagina a:visited{
+    color: yellow;
+}
+
+.dark #enlacespagina p{
+    color: white;
+}
+
+.dark #contenidosecundario h3{
+    background-color: #333;
+}
+
+.dark #articulo2 {
+    color: white;
+}
+
+.dark #textoARt2 p{
+    background-color: #333;
+}
+
+.dark #textoARt2 #listadecoches{
+    background-color: #333;
+}
+
+.dark #contenidoExtra{
+    background-color: #333;
+}
+
+.dark #contenidoExtra h3{
+    color: white;
+}
+
+.dark #contenidoExtra .mejorescoches{
+    border: 2px solid yellow;
+    box-shadow: 5px 5px 10px red;
+}
+
+.dark #footer{
+    background-color: #333;
+}
+
+.dark #footer h3{
+    color: white;
+}
+
+.dark #footer p{
+    color: white;
+} /*aqui se acaba el estilo para el modo oscuro*/
+
 #imgcabezera{
     width: 50%;
     margin: 10px;
     padding: 10px;
+    border-radius: 20px;
 }
 
 #articulo1{
@@ -53,6 +184,10 @@ body{
     background-color: darkgoldenrod;
     margin: 5px;
     padding: 5px;
+}
+
+#otrosenlaces span{
+    margin-left: 20px;
 }
 
 #enlacespagina{
@@ -124,11 +259,14 @@ ul{
     margin-top: 20px;
     margin: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
+    border-radius: 10px;
 }
 
 #contenidosecundario h3{
     color: aliceblue;
+    background-color: yellowgreen;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 #contenidosecundario #articulo2 p{
@@ -138,20 +276,24 @@ ul{
     margin-right: 10px;
 }
 
-.img_art2 {
-    margin-bottom: 5px;
-}
-  
-.img_art2 img {
-    height: auto;
-}
-  
-#textoARt2{  
+#textoARt2 p{  
     margin-bottom: 10px;
     margin: 10px;
     padding: 10px;
     background-color: cadetblue;
     text-shadow: 2px 2px rgb(38, 0, 255);
+}
+
+#textoARt2 #listadecoches{
+    background-color: cadetblue;
+    margin-bottom: 10px;
+    margin: 10px;
+    padding: 10px;  
+}
+
+#textoARt2 .listacoches{
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #articulo2{
@@ -164,18 +306,20 @@ ul{
     padding: 20px;
 }
  
-#imagenprueba{
+#imagencochevista{
     border: 2px solid red;
     border-radius: 20px;
     box-shadow: 5px 5px 10px violet;
+    width: 700px;
+    height: 350px;
 }
 
 #contenidoExtra{
-    background-color: yellow;
-    display: flex;
+    background-color: springgreen;
+    border-radius: 20px;
 }
 
-#asideextra{
+/* #asideextra{
     background-color: darkgray;
 }
   
@@ -195,14 +339,18 @@ ul{
     text-align: justify;
     margin-left: 10px;
     margin-right: 10px;
-}
+} */
 
-.imgextras{
-    width: 150px;
+.mejorescoches{
+    width: 230px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px solid rgb(158, 182, 177);
+    box-shadow: 5px 5px 10px rgb(211, 12, 211);
 }
 
 #img-y_texto h3{
-    color: teal;
+    color: darkgoldenrod;
     margin: 5px;
     padding: 5px;
 }
@@ -213,20 +361,30 @@ ul{
     padding: 5px;
 }
 
+.img_ex img{
+    transition: 1s; /*Esto hace que tarde un segundo en ampliar la imagen*/
+}
+
+.img_ex img:hover{
+    cursor: pointer; /*Esto es para que a lpasar la imagen se ponga la 'mano' e nved de el cursor*/
+    transition: 1s;
+    transform: scale(1.1); /*Esto es para que cuando pase el cursor se amplie la imagen*/ 
+}
+
 .imagenesex{
     margin-bottom: 10px;
 }
 
 #footer{
     margin-top: 15px;
-    background-color: black;
+    background-color: darkgrey;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #footer h3{
-    color: aliceblue;
+    color: black;
 }
 
 #pie{
@@ -236,6 +394,7 @@ ul{
 #pie p{
    margin: 10px;
    padding: 10px;
+   color: black;
 }
 
 #footer a{
@@ -243,6 +402,6 @@ ul{
 }
 
 #footer a:visited{
-    color: cyan;
+    color: yellow;
 }
 

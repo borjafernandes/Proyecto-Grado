@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="CSS/principalCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--Este enlace es de una pagina web para que me deje 
+    utilizar los iconos que tiene esa pagina-->
+    <link rel="stylesheet" href="./CSS/principalCSS.css">
     <title>The University of Driving</title>
 </head>
 <body>
 
     <div id="cabezera">
         <header>
+            <label for="btncambiarmodo" id="iconoluna"><i class="fa-solid fa-moon"></i></label>
+            <input type="checkbox" id="btncambiarmodo">
             <h1>The University of Driving</h1>
-            <img src="/Recursos/Imagenes-coches/foto1.jpg" alt="No funciona la imagen" id="imgcabezera">
+            <img src="./Recursos/Imagenes-coches/foto1.jpg" alt="No funciona la imagen" id="imgcabezera">
             <div id="otrosenlaces">
                 <nav>
-                    <span><a href="/Informacion/Informacion.html" target="_parent">Informacion |</a></span>
-                    <span><a href="/Horario/Horario.html" target="_parent">Horario |</a></span>
-                    <span><a href="/Estudios/Estudios.html" target="_parent">Estudios |</a></span>
-                    <span><a href="/Contacto/Contacto.html" target="_parent">Contacto</a></span>
+                    <span><a href="Informacion.html" target="_parent">Informacion</a></span>
+                    <span><a href="Horario.html" target="_parent">Horario</a></span>
+                    <span><a href="Estudios.html" target="_parent">Estudios</a></span>
+                    <span><a href="Contacto.html" target="_parent">Contacto</a></span>
                        
                 </nav>
             </div>
@@ -28,7 +34,6 @@
                 <a href="#informacion_adicional">Informacion adicional</a>
                 <a href="#pie">Pie de pagina</a>
             </div>
-            
         </header>
     </div>
     
@@ -74,19 +79,47 @@
         </div> 
 
         <div id="contenidosecundario">
-            <h3>Contenido Secundario</h3>
+            <h3>Mejores coches para el Drift</h3>
             <article id="articulo2">
 
                <div id="box-imagenPrueba">
-                <img src="/Recursos/Imagenes-prueba/css3.png" alt="prueba" id="imagenprueba">
+                <img src="Recursos/Imagenes-coches/cochedrift5.jpg" alt="imagencochevista" id="imagencochevista">
                </div>
                
                 <div id="textoARt2">
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In placeat dolores expedita 
-                        sequi inventore consectetur cum facilis excepturi saepe necessitatibus ad eveniet 
-                        cupiditate nobis harum sint, dolore quo quaerat libero.
+                        Derrapar o hacer drift es una de las cosas más divertidas que puedes 
+                        hacer con un coche. Eso sí, antes de hacer nada, asegúrate de que dominas 
+                        la técnica o que, al menos, lo haces en un sitio en el que nada corra peligro. 
                     </p>
+                    <ul id="listadecoches">
+                        <li class="listacoches">
+                            <u><strong>1. El Ford Focus RS</strong></u> ha sido uno de los primeros coches de producción que 
+                            ofrece el «modo drift». Un modo que ha llenado los corazones de muchos 
+                            conductores. No hace falta que te digamos más.
+                        </li>
+                        <li class="listacoches">
+                            <u><strong>2. El Nissan 350Z</strong></u> no sea el mejor coche del mundo, pero si que 
+                            es uno de los mejores coches para hacer drift. No tiene unos precios muy 
+                            elevados y estamos seguros de que hará que te diviertas en un circuito.
+                        </li>
+                        <li class="listacoches">
+                            <u><strong>3. El BMW M5</strong></u> no decepciona, sea la generación que sea. Su gran potencia va 
+                            a las ruedas traseras y se combina con una gran distancia entre ejes. 
+                            El nuevo BMW M5 es de tracción total, pero tiene un modo de tracción trasera 
+                            para garantizarte una buena sesión de drift. ¿Lo quieres? Nosotros también.
+                        </li>
+                        <li class="listacoches">
+                            <u><strong>4. El Mazda RX-7</strong></u> tiene motor delantero, es manual y de tracción trasera. 
+                            Como seguro que sabes, los motores rotativos suelen pecar de su falta de 
+                            confianza, por eso, algunos conductores optan por cambiarle el motor.
+                        </li>
+                        <li class="listacoches">
+                            <u><strong>5. El Toyota GT86</strong></u> rompió el récord del derrape más 
+                            largo durante el pasado año 2020. Además, las unidades de este modelo 
+                            están relativamente baratas.
+                        </li>
+                    </ul>        
                 </div>
                 
            </article>
@@ -94,38 +127,31 @@
 
         <div id="contenidoExtra">
             <div id="img-y_texto">
-                <h3>Contenido EXTRA (P1)</h3>
+                <h3>Imagenes de los coches utilizados para el drift</h3>
             <div class="imagenesex">
 
                 <div class="img_ex">
-                    <img src="/Recursos/Imagenes-prueba/javascript.png" alt="imagen1" class="imgextras">
-                    <img src="/Recursos/Imagenes-prueba/javascript.png" alt="imagen2" class="imgextras">
+                    <img src="Recursos/Imagenes-coches/cochedrift1.jpg" alt="cochedrift" class="mejorescoches">
+                    <img src="Recursos/Imagenes-coches/cochedrift2.jpg" alt="cochedrift" class="mejorescoches">
+                    <img src="Recursos/Imagenes-coches/cochedrift6.jpg" alt="cochedrift" class="mejorescoches"> 
                 </div>
 
             </div>
-
             <div class="imagenesex">
                 
                 <div class="img_ex">
-                    <img src="/Recursos/Imagenes-prueba/javascript.png" alt="imagen3" class="imgextras">
-                    <img src="/Recursos/Imagenes-prueba/javascript.png" alt="imagen4" class="imgextras">
+                    <img src="Recursos/Imagenes-coches/cochedrift3.jpg" alt="cochedrift" class="mejorescoches">
+                    <img src="Recursos/Imagenes-coches/cochedrift4.jpg" alt="cochedrift" class="mejorescoches">
+                    <img src="Recursos/Imagenes-coches/cochedrift7.jpg" alt="cochedrift" class="mejorescoches">
                 </div>
 
             </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, qui veritatis! 
-                Recusandae enim excepturi odit ab adipisci eos nostrum, ad commodi! Sed rem officia
-                nostrum? Asperiores mollitia molestias quae eum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, qui veritatis! 
-                Recusandae enim excepturi odit ab adipisci eos nostrum, ad commodi! Sed rem officia
-                nostrum? Asperiores mollitia molestias quae eum.
-            </p>
 
             </div>
             
-            <div id="asideextra">
+            <!-- <div id="asideextra">
                 <aside>
-                    <img src="/Recursos/Imagenes-prueba/html5.png" alt="imgextra">
+                    <img src="Recursos/Imagenes-prueba/html5.png" alt="imgextra">
                     <h3>Contenido EXTRA (P2)</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, qui veritatis! 
@@ -136,7 +162,7 @@
                         nostrum? Asperiores mollitia molestias quae eum.
                     </p>
                 </aside>
-            </div>
+            </div> -->
             
         </div>
 
@@ -157,6 +183,6 @@
         <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
         <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i>Youtube</a> 
     </div>
-    
+    <script src="/JavaScript/principalJS.js"></script>
 </body>
 </html>
