@@ -5,7 +5,7 @@
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url(/Recursos/Fondos/fondo1.jpg);
+    background-image: url(../Recursos/Fondos/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover; /*esto es para cubrir todo el cuerpo*/
     background-attachment: fixed;/*esto es para fijar la imagen a todo el body*/
