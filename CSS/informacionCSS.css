@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/Recursos/Fondos/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*esto es para cubrir todo el cuerpo*/
+    background-attachment: fixed;/*esto es para fijar la imagen a todo el body*/
+}
+
+section {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: 0 auto;/*esto es para centrarlo*/
+    margin-bottom: 20px;
+}
+
+section img {
+    width: 0px;
+    flex-grow: 1;/*esto es para que la imagen ocupe todo el espacio que pueda*/
+    object-fit: cover;/*esto es para que cubra todo el espacio*/
+    opacity: .8;/*le bajamos un poquito la opacidad*/
+    transition: .5s ease;/*le ponemos una transicion para cada vez que pasemos el cursor por encima*/
+}
+
+section img:hover{
+    cursor: crosshair;/*cambiamos el tipo de cursor*/
+    width: 300px;
+    opacity: 1;/*le ponemos la misma opacidad que tenia al principio*/
+    filter: contrast(120%);/*subimos el contraste de la imagen para que se vea un poco mas clara*/
+}
+
+#cabezera{
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#cabezera a{
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+a:visited{
+    color: chartreuse;
+}
+
+#cabezera h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contenido{
+    margin-bottom: 10px;
+}
+
+#informacion{
+    margin: 10px;
+    text-align: justify;
+}
+
+#informacion p::first-letter{
+    color: yellow;
+    font-size: 1.5em;
+}
+
+#informacion h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#informacion h4{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#informacion #listauno{
+    padding: 10px;
+    margin-left: 20px;
+    color: blue;
+}
+
+#informacion #listados{
+    padding: 10px;
+    margin-left: 20px;
+    color: yellowgreen;
+}
+
+#footer{
+    text-align: center;
+}
+
+#footer p{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+#footer a{
+    margin-left: 10px;
+    letter-spacing: 2px;
+}
+
+#footer a:visited{
+    color: rebeccapurple;
+}
+

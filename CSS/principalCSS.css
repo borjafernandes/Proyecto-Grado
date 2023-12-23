@@ -276,6 +276,10 @@ ul{
     margin-right: 10px;
 }
 
+#textoARt2 {
+    order: -1; /*esto es para poner el texto al lado izquierdo de la imagen*/
+}
+
 #textoARt2 p{  
     margin-bottom: 10px;
     margin: 10px;
