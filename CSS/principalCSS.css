@@ -10,6 +10,24 @@ body{
     transition: all 1.5s ease;
 }
 
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Fuentes_Letras/night_machine/Night\ Machine.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'WrathStyles';
+    src: url(../Fuentes_Letras/anger_styles/WrathStyles.ttf) format('truetype');
+}
+
+h1{
+    font-family: 'night_machine';
+}
+
+p {
+    line-height: 1.8;
+}
+
 #contenidoPrincipal{
     display: flex;  
 }
@@ -384,7 +402,7 @@ ul{
     background-color: darkgrey;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #footer h3{
@@ -403,6 +421,7 @@ ul{
 
 #footer a{
    margin-right: 10px; 
+   font-family: 'WrathStyles';
 }
 
 #footer a:visited{
