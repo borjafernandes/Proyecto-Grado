@@ -22,6 +22,7 @@ body{
 
 h1{
     font-family: 'night_machine';
+    font-size: 3.5em;
 }
 
 p {
@@ -43,7 +44,7 @@ p {
 #iconoluna{
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 20px;
     font-size: 2em;
     color: black;
     cursor: pointer;
@@ -159,6 +160,10 @@ p {
 
 .dark #footer h3{
     color: white;
+}
+
+.dark #footer a:visited{
+    color: yellow;
 }
 
 .dark #footer p{
@@ -425,6 +430,6 @@ ul{
 }
 
 #footer a:visited{
-    color: yellow;
+    color: rgb(142, 54, 241);
 }
 

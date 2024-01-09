@@ -3,6 +3,16 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Fuentes_Letras/night_machine/Night\ Machine.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'WrathStyles';
+    src: url(../Fuentes_Letras/anger_styles/WrathStyles.ttf) format('truetype');
+}
+
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(../Recursos/Fondos/fondo1.jpg);
@@ -32,6 +42,15 @@ section img:hover{
     width: 300px;
     opacity: 1;/*le ponemos la misma opacidad que tenia al principio*/
     filter: contrast(120%);/*subimos el contraste de la imagen para que se vea un poco mas clara*/
+}
+
+p{
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+h1{
+    font-family: 'night_machine';
 }
 
 #cabezera{
@@ -68,7 +87,7 @@ a:visited{
 }
 
 #informacion p::first-letter{
-    color: yellow;
+    color: rgb(57, 235, 13);
     font-size: 1.5em;
 }
 
@@ -81,6 +100,7 @@ a:visited{
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
+    font-size: 1.5em;
 }
 
 #informacion #listauno{
@@ -107,9 +127,10 @@ a:visited{
 #footer a{
     margin-left: 10px;
     letter-spacing: 2px;
+    font-family: 'WrathStyles';
 }
 
 #footer a:visited{
-    color: rebeccapurple;
+    color: rgb(12, 75, 250);
 }
 
