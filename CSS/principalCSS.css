@@ -41,9 +41,13 @@ p {
     display: none; /*Esto es para que no se vea el checkbox*/
 }
 
+.boton-destacado {
+    background-color: rgb(109, 224, 15);
+}
+
 #iconoluna{
     position: absolute;
-    top: 20px;
+    top: 35px;
     right: 20px;
     font-size: 2em;
     color: black;
@@ -105,15 +109,15 @@ p {
     margin-bottom: 20px;
 }
 
-.dark #otrosenlaces{
+/* .dark #otrosenlaces{
     background-color: #333;
 }
 
 .dark #otrosenlaces a:visited{
     color: orange;
-}
+} */
 
-.dark #enlacespagina{
+/* .dark #enlacespagina{
     background-color: #333;
 }
 
@@ -123,7 +127,7 @@ p {
 
 .dark #enlacespagina p{
     color: white;
-}
+} */
 
 .dark #contenidosecundario h3{
     background-color: #333;
@@ -170,12 +174,21 @@ p {
     color: white;
 } /*aqui se acaba el estilo para el modo oscuro*/
 
-#imgcabezera{
-    width: 50%;
+#imagenEnMenu{
+    width: 380px;
+    height: auto;
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
 }
+
+.carousel{
+    width: 800px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
 
 #articulo1{
     background-color: beige;
@@ -203,7 +216,7 @@ p {
     text-align: justify;
 }
 
-#otrosenlaces{
+/* #otrosenlaces{
     background-color: darkgoldenrod;
     margin: 5px;
     padding: 5px;
@@ -211,9 +224,9 @@ p {
 
 #otrosenlaces span{
     margin-left: 20px;
-}
+} */
 
-#enlacespagina{
+/* #enlacespagina{
     background-color: yellowgreen;
     margin: 5px;
     padding: 5px;
@@ -226,22 +239,16 @@ p {
 
 #enlacespagina a:hover{
     color: sandybrown;
-}
+} */
 
-#otrosenlaces nav a{
+/* #otrosenlaces nav a{
     text-decoration: none;
 }
 
 #otrosenlaces nav a:hover{
     background-color: blueviolet;
     color: aqua;
-}
-
-/*
-#otrosenlaces nav a:visited{
-    color: deeppink;
-}
-*/
+} */
 
 #articulo1 h2{
     margin-top: 10px;
