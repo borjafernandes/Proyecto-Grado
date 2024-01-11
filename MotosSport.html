@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/motoSport.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!--enlace para que 
+    funione todo lo de boostrap-->
+    <title>Moto Sport</title>
+</head>
+<body>
+    
+<div class="contenedor">
+
+    <nav class="navbar navbar-dark fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler boton-destacado" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <img src="./Recursos/Imagenes-coches/foto1.jpg" alt="imagenEnMenu" id="imagenEnMenu">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Otras Paginas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> 
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="PaginaPrincipal.html">Pagina Principal</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Descubre Mas
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="Informacion.html" target="_parent">Informacion</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                    <li><a class="dropdown-item" href="Horario.html" target="_parent">Horario</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Estudios.html" target="_parent">Estudios</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Contacto.html" target="_parent">Contacto</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Otra Pagina Especial
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#" target="_blank">Seleccion de Vehiculos</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Recursos/Imagenes-Moto/moto5.png" class="card-img-top" alt="moto5">
+            <div class="card-body">
+              <h5 class="card-title">Kawasaki Ninja H2 / R / Carbon</h5>
+              <p class="card-text">
+                Kawasaki también está más cerca del superbikes que de MotoGP, 
+                aunque el resultado vuelve a ser el mismo: una máquina de 
+                competición con homologación, precio y prestaciones 'de calle'. 
+                Esta Kawasaki Ninja H2, con 998 cc, llega a los 231 CV. Aunque 
+                mucho ojo, porque 'Kawa' tiene una versión aún más radical, 
+                la H2R, que desarrolla ¡hasta 310 CV!
+              </p>
+              <a href="https://www.motofichas.com/marcas/kawasaki/ninja-h2-r-carbon-2020" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Recursos/Imagenes-Moto/moto6.png" class="card-img-top" alt="moto6">
+            <div class="card-body">
+              <h5 class="card-title">Norton V4 RR – SS</h5>
+              <p class="card-text">
+                    Una de las mejores motos deportivas de 2022 con una marca igual 
+                    de legendaria que las anteriores, pero para muy 'cafeteros', 
+                    y que fue relanzada en mercados como el español hace casi cinco 
+                    años, después de tiempos muy gloriosos en disciplinas tan 
+                    exigentes como el TT de la Isla de Man. 
+              </p>
+              <a href="https://www.mundomotero.com/motos/norton/v4-rr-ss" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Recursos/Imagenes-Moto/moto7.png" class="card-img-top" alt="moto7">
+            <div class="card-body">
+              <h5 class="card-title"> Aprilia RSV4</h5>
+              <p class="card-text">
+                Esta otra firma italiana tampoco es precisamente novata en eso de llevar a 
+                las vías públicas un brillante palmarés de competición. Este modelo es otra 
+                V4 de última generación -una de las pruebas es que ya cumple la Euro5 de 
+                motos-, con una nada desdeñable potencia de 217 caballos.
+              </p>
+              <a href="https://www.motofichas.com/marcas/aprilia/rsv4" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="./Recursos/Imagenes-Moto/moto1.png" class="card-img-top" alt="moto1">
+            <div class="card-body">
+              <h5 class="card-title">Ducati Panigale V4 R</h5>
+              <p class="card-text">
+                Es una obra maestra de ingeniería y una de las motos 
+                deportivas más potentes que existen actualmente. Equipada con un motor de 
+                1103cc en V, esta bestia italiana (así se la define) produce una impresionante 
+                potencia de 221cv. 
+                </p>
+                <a href="https://ducatimadrid.com/motocicletas/panigale-v4-r/" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto2.png" class="card-img-top" alt="moto2">
+              <div class="card-body">
+                <h5 class="card-title">Yamaha YZF-R1</h5>
+                <p class="card-text">
+                    Es una legendaria que ha ganado numerosos campeonatos en el mundo del 
+                    motociclismo de competición. Con un propulsor de 998cc y una potencia 
+                    de 197cv, esta máquina japonesa ofrece una aceleración impresionante y
+                    una velocidad máxima sobresaliente de 300km/h.  
+                    </p>
+                    <a href="https://www.mundomotero.com/motos/yamaha/yzf-r1" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto3.png" class="card-img-top" alt="moto3">
+              <div class="card-body">
+                <h5 class="card-title">Kawasaki Ninja ZX-10R</h5>
+                <p class="card-text">
+                    Reúne potencia y agilidad en su máximo esplendor para posibilitar una 
+                    experiencia de conducción más que positiva y a la altura de lo que se 
+                    xige en la actualidad. Con un motor de 998cc y una potencia de 200cv, 
+                    esta máquina japonesa se destaca por su capacidad de aceleración y 
+                    reacción en todo tipo de contexto y por su velocidad máxima de 320km/h.
+                    </p>
+                    <a href="https://www.mundomotero.com/motos/kawasaki/zx-10r" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto4.png" class="card-img-top" alt="moto4">
+              <div class="card-body">
+                <h5 class="card-title">BMW S 1000 RR</h5>
+                <p class="card-text">
+                    Con un propulsor de 999cc y una potencia de 205cv, esta motocicleta 
+                    alemana exhibe un desenvolvimiento general más que considerable y 
+                    que supera las expectativas de los conductores. Asimismo, tiene 
+                    control dinámico de tracción, cambio rápido y sistema de control de 
+                    frenado. 
+                </p>
+                <a href="https://www.mundomotero.com/motos/bmw/s-1000-rr" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto8.png" class="card-img-top" alt="moto8">
+              <div class="card-body">
+                <h5 class="card-title">Yamaha YZF-R1M</h5>
+                <p class="card-text">
+                  Dentro de las japonesas, la rival de Honda dentro y fuera del asfalto, 
+                  en cualquier segmento y a cualquier velocidad, siempre es la firma de 
+                  los tres diapasones. Y aquí, su 'MotoGP' de calle es la YZF-R1M. La 
+                  última evolución de la afamada 'R1' es la Yamaha YZF-R1, con 999 cc, 
+                  200 CV, 199 Kg. 
+                </p>
+                <a href="https://www.mundomotero.com/motos/yamaha/yzf-r1m" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto9.png" class="card-img-top" alt="moto9">
+              <div class="card-body">
+                <h5 class="card-title"> Honda CBR1000RR-R / SP</h5>
+                <p class="card-text">
+                  De nuevo, adaptación y tecnología a la calle desde un ADN de competición. 
+                  Podríamos ir un nivel más abajo aún, pero como aquí se trata de tener 
+                  muchos caballos bajo el asiento, entraríamos en la gama CBR sin descender 
+                  del litro de cilindrada para quedarnos con este modelo en los 214 CV y  
+                  3 modos de conducción para sólo 201 kg de peso. 
+                </p>
+                <a href="https://www.mundomotero.com/motos/honda/cbr1000rr-r" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto10.png" class="card-img-top" alt="moto10">
+              <div class="card-body">
+                <h5 class="card-title">BMW HP4 Race</h5>
+                <p class="card-text">
+                  Con ese apellido, imaginarás que esta moto deportiva es de todo menos 
+                  racional, y su relación entre kg y caballos puede ser muy favorable 
+                  para un trazado de competición o para altas velocidades en carreteras 
+                  abiertas, pero no para las gestiones diarias por ciudad ni mucho menos 
+                  para ahorrar toda la gasolina posible en tus desplazamientos. 
+                </p>
+                <a href="https://www.mundomotero.com/motos/bmw/hp4-race" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto11.png" class="card-img-top" alt="moto11">
+              <div class="card-body">
+                <h5 class="card-title">Honda RC213V-S</h5>
+                <p class="card-text">
+                  Si BMW aplicaba toda su filosofía de esa competición, Honda hace lo propio con 
+                  otro campeonato en la que lleva reinando (aunque no precisamente en soledad) 
+                  en los últimos años, el Mundial de Motociclismo, en la categoría reina. Y 
+                  precisamente con esos valores de MotoGP los bolsillos más pudientes tienen 
+                  este modelo, de 999 cc y 215 CV (por casi 200.000 euros). 
+                </p>
+                <a href="https://www.motorbikemag.es/ficha-tecnica/honda-rc213v-s/" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="./Recursos/Imagenes-Moto/moto12.png" class="card-img-top" alt="moto12">
+              <div class="card-body">
+                <h5 class="card-title">Aprilia RS 660 Extrema 2023</h5>
+                <p class="card-text">
+                  Este modelo se presentó en 2019 para cubrir el hueco entre los modelos RS y RSV4. 
+                  Diseñada para estar en el top de las motos de peso medio, sigue contando con un 
+                  bicilíndrico en paralelo DOHC de 659 cc y refrigeración líquida que rinde 100 CV 
+                  y 49,4 lb-pie de par a 8.500 rpm. Está equipada con características electrónicas 
+                  de serie como control de tracción ajustable, ABS en curvas, freno motor, mapa 
+                  motor y control de caballitos, así como cinco modos de conducción (Road y Track).
+                </p>
+                <a href="https://www.motofichas.com/marcas/aprilia/rs-660-extrema-2023" target="_blank" class="enlaceColorrand" onmouseover="cambiarColor(this)">Mas Informacion</a>
+              </div>
+            </div>
+          </div>
+      </div>
+        
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- este script es de boostrap -->
+<script src="./JavaScript/colorRand.js"></script>
+</body>
+</html>
