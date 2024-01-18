@@ -15,7 +15,7 @@
 
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url(../Recursos/Fondos/fondo1.jpg);
+    background-image: url(../Recursos/Fondos/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover; /*esto es para cubrir todo el cuerpo*/
     background-attachment: fixed;/*esto es para fijar la imagen a todo el body*/
@@ -87,7 +87,7 @@ a:visited{
 }
 
 #informacion p::first-letter{
-    color: rgb(57, 235, 13);
+    color: rgb(0, 68, 255);
     font-size: 1.5em;
 }
 
@@ -112,7 +112,7 @@ a:visited{
 #informacion #listados{
     padding: 10px;
     margin-left: 20px;
-    color: yellowgreen;
+    color: rgb(0, 16, 247);
 }
 
 #footer{
