@@ -49,8 +49,12 @@ p{
     line-height: 1.5;
 }
 
-h1{
-    font-family: 'night_machine';
+#imagenEnMenu{
+    width: 380px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
 #cabezera{
@@ -68,13 +72,11 @@ a:hover{
     color: aquamarine;
 }
 
-a:visited{
-    color: chartreuse;
-}
-
 #cabezera h1{
     text-align: center;
     margin-bottom: 10px;
+    font-family: 'night_machine';
+    color: rgb(235, 54, 235);
 }
 
 #contenido{
@@ -106,13 +108,17 @@ a:visited{
 #informacion #listauno{
     padding: 10px;
     margin-left: 20px;
-    color: blue;
+    color: rgb(255, 0, 34);
 }
 
 #informacion #listados{
     padding: 10px;
     margin-left: 20px;
-    color: rgb(0, 16, 247);
+    color: rgb(247, 0, 124);
+}
+
+strong{
+    color: crimson;
 }
 
 #footer{
@@ -122,15 +128,17 @@ a:visited{
 #footer p{
     margin-top: 5px;
     margin-bottom: 3px;
+    color: orange;
 }
 
 #footer a{
     margin-left: 10px;
     letter-spacing: 2px;
     font-family: 'WrathStyles';
+    color: violet;
 }
 
 #footer a:visited{
-    color: rgb(12, 75, 250);
+    color: rgb(20, 250, 12);
 }
 
