@@ -14,7 +14,7 @@
         $nombre = isset($_POST["nombre"]) ? $_POST["nombre"] : "No has introducido tu Nombre";
         $apellidos = isset($_POST["apellidos"]) ? $_POST["apellidos"] : "No has introducido tus apellidos";
         $email = isset($_POST["email"]) ? $_POST["email"] : "No has introducido tu Email";
-        $fecha = isset($_POST["fecha"]) ? $_POST["fecha"] : "grgdfsdd";
+        $fecha = isset($_POST["fecha"]) ? $_POST["fecha"] : "";
 
         echo "<h2>Resultados del Contacto</h2>";
         echo "<table>";

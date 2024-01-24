@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Chopsic';
+    src: url(../Fuentes_Letras/Chopsic.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Signs';
+    src: url(../Fuentes_Letras/American\ Signs.otf) format('truetype');
+}
+
+#titulo-y-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imagen{
+    text-align: center;
+}
+
+#imagencentro{
+    border-radius: 20px;
+}
+
+img {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+h1,h2,h3,h4{
+    text-align: center;
+    font-family: 'Chopsic';
+}
+
+#barraNavegacion nav{
+    font-family: Courier 1.4em silver;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: space-around;
+    font-family: 'Signs';
+}
+
+.contenidos a{
+    text-decoration: none;
+}
+
+.contenidos a:hover{
+    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+}
+
+#submenu {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to bottom, rgb(255, 217, 0), rgb(1, 252, 177));
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 5px;
+}
+
+#submenu a:hover{
+    color: white;
+}
+
+#videos:hover #submenu {
+    display: block;
+}
+
+#caja-contenido{
+    background: linear-gradient(to bottom, rgb(255, 213, 0), rgb(1, 252, 231));
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+#mostrarImagen{
+    margin: 15px;
+    background-color: blue;
+    color: white;
+    border: 2px solid;
+    padding: 6px;
+    border-radius: 15px;
+}
+
+#mostrarImagen:hover{
+    background-color:  crimson;
+    color: white;
+}
+
+#cabezera{
+    margin-bottom: 10px;
+}
+
+#footer{
+    font-family: 'Signs';
+    text-align: center;
+}
+
+#pie p{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(148, 78, 78);
+}
+
+#footer a{
+    margin-right: 10px; 
+    color: violet;
+}
+
+#footer a:visited{
+    color: rgb(142, 54, 241);
+}

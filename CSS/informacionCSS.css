@@ -63,9 +63,8 @@ p{
     margin-bottom: 20px;
 }
 
-#cabezera a{
-    margin-left: 10px;
-    text-decoration: none;
+#boton-destacado {
+    background-color: blue;
 }
 
 a:hover{

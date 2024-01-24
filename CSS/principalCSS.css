@@ -3,11 +3,56 @@
     padding: 0px;
 }
 
+@media only screen and (max-width: 767px) {
+
+    #contenidoPrincipal {
+        flex-direction: column;
+    }
+
+    #articulo1,#aside {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #articulo2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #textoARt2 {
+        order: 0; /* Volver a la posición original en pantallas pequeñas */
+    }
+
+    #box-imagenPrueba img{
+        width: 100%;
+    }
+
+}
+  
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #articulo1,#aside {
+        width: 90%;
+    }
+
+    #articulo2 {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    #box-imagenPrueba img{
+        width: 100%;
+    }
+
+}
+
 body{
     background-color: cornflowerblue;
     text-align: center;
     font-size: 1em;
     transition: all 1.5s ease;
+    scroll-behavior: smooth; /*esto sirve para qeu al pulsar en los 
+    enlaces de la pagina no se vea tan brusco el movimiento de desplazamiento*/
 }
 
 @font-face {
@@ -109,26 +154,6 @@ p {
     margin-bottom: 20px;
 }
 
-/* .dark #otrosenlaces{
-    background-color: #333;
-}
-
-.dark #otrosenlaces a:visited{
-    color: orange;
-} */
-
-/* .dark #enlacespagina{
-    background-color: #333;
-}
-
-.dark #enlacespagina a:visited{
-    color: yellow;
-}
-
-.dark #enlacespagina p{
-    color: white;
-} */
-
 .dark #contenidosecundario h3{
     background-color: #333;
 }
@@ -214,40 +239,6 @@ p {
     border-radius: 8px;
     text-align: justify;
 }
-
-/* #otrosenlaces{
-    background-color: darkgoldenrod;
-    margin: 5px;
-    padding: 5px;
-}
-
-#otrosenlaces span{
-    margin-left: 20px;
-} */
-
-/* #enlacespagina{
-    background-color: yellowgreen;
-    margin: 5px;
-    padding: 5px;
-}
-
-#enlacespagina a{
-    margin-left: 10px;
-    text-decoration: none;
-}
-
-#enlacespagina a:hover{
-    color: sandybrown;
-} */
-
-/* #otrosenlaces nav a{
-    text-decoration: none;
-}
-
-#otrosenlaces nav a:hover{
-    background-color: blueviolet;
-    color: aqua;
-} */
 
 #articulo1 h2{
     margin-top: 10px;
@@ -350,29 +341,8 @@ ul{
 #contenidoExtra{
     background-color: rgb(0, 0, 0);
     border-radius: 20px;
+    padding: 10px;
 }
-
-/* #asideextra{
-    background-color: darkgray;
-}
-  
-#asideextra h3{
-    color: teal;
-    margin: 5px;
-    padding: 5px;
-}
-
-#asideextra img{
-    margin-top: 10px;
-    border: 2px solid rgb(38, 0, 255);
-    box-shadow: 5px 5px 10px rgb(8, 245, 186);
-}
-
-#asideextra p{
-    text-align: justify;
-    margin-left: 10px;
-    margin-right: 10px;
-} */
 
 .mejorescoches{
     width: 230px;
