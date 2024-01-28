@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--este link de abajo es para que funcione el carousel de materializeCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- este link es para los iconos de boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" 
+    integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/McLarenCSS.css">
+    <title>McLaren</title>
+</head>
+<body>
+
+    <header>
+        <span class="anyo">Borja Fernandes Augusto 2022-2024</span>
+        <a href="https://www.mclaren.com/" class="logo" target="_blank"><img src="./Iconos/logo.png" alt="logo"></a>
+        <a href="#" class="menu" onclick="Menu();"></a>
+    </header>
+
+    <div id="banner">
+
+        <ul class="nav">
+            <li><a href="PaginaPrincipal.html">Pagina Principal</a></li>
+            <li><a href="Informacion.html">Informacion</a></li>
+            <li><a href="Estudios.html">Estudios</a></li>
+            <li><a href="Horario.html">Horarrio</a></li>
+            <li><a href="Contacto.php">Contacto</a></li>
+        </ul>
+
+        <div class="lista-video">
+            <video 
+            class="video mclaren-1 active"
+            src="./Recursos/Videos-coches/mclaren-1.mp4" 
+            autoplay loop muted></video>
+
+            <video 
+            class="video mclaren-2"
+            src="./Recursos/Videos-coches/mclaren-2.mp4"   
+            autoplay loop muted></video>
+
+            <video 
+            class="video mclaren-3"
+            src="./Recursos/Videos-coches/mclaren-3.mp4" 
+            autoplay loop muted></video>
+
+            <video 
+            class="video mclaren-4"
+            src="./Recursos/Videos-coches/mclaren-4.mp4" 
+            autoplay loop muted></video>
+
+            <video 
+            class="video mclaren-5"
+            src="./Recursos/Videos-coches/mclaren-5.mp4" 
+            autoplay loop muted></video>
+
+        </div>
+
+        <div class="contenido">
+            <h1>McLaren</h1>
+            <h3 class="modelo mclaren-1 active">765LT SPIDER</h3>
+            <h3 class="modelo mclaren-2" style="color: #92ff00;">ARTURA</h3>
+            <h3 class="modelo mclaren-3" style="color: #ff0015;">7505</h3>
+            <h3 class="modelo mclaren-4" style="color: #ff2e00;">765LT</h3>
+            <h3 class="modelo mclaren-5" style="color: #bbc0dd;">7505 SPIDER</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit placeat, 
+                hic repellat non incidunt eos natus est officiis qui quae alias aliquam 
+                dicta, maiores commodi magni, reiciendis dolorem in id.
+            </p>
+            <a href="#" id="obtenerMcLaren" onclick="obtenerMcLaren();">Obtener McLaren</a>
+        </div>
+
+        <!-- boton de play y pause de los videos de fondo -->
+        <a href="#" class="pause active" onclick="pauseVideo();">
+            <i class="bi bi-pause-circle-fill"></i>
+        </a>
+
+        <a href="#" class="play" onclick="playVideo();">
+            <i class="bi bi-play-circle-fill"></i>
+        </a>
+
+        <div id="pantalla">
+            <div id="sombra"></div>
+            <div>
+
+                <span style="--i: 0">
+                    <video src="./Recursos/Videos-coches/mclaren-1.mp4" 
+                    class="trailer mclaren-1 pantalla-pequeña active"
+                    autoplay loop muted></video>
+
+                    <video src="./Recursos/Videos-coches/mclaren-2.mp4" 
+                    class="trailer mclaren-2 pantalla-pequeña"
+                    autoplay loop muted></video>
+
+                    <video src="./Recursos/Videos-coches/mclaren-3.mp4" 
+                    class="trailer mclaren-3 pantalla-pequeña"
+                    autoplay loop muted></video>
+
+                    <video src="./Recursos/Videos-coches/mclaren-4.mp4" 
+                    class="trailer mclaren-4 pantalla-pequeña"
+                    autoplay loop muted></video>
+
+                    <video src="./Recursos/Videos-coches/mclaren-5.mp4" 
+                    class="trailer mclaren-5 pantalla-pequeña"
+                    autoplay loop muted></video>
+                </span>
+
+                <span style="--i: 1">
+                    <video src="./Recursos/Videos-coches/trailer-1.mp4" 
+                    class="pantalla-pequeña"
+                    autoplay loop muted></video>
+                </span>
+
+                <span style="--i: 2">
+                    <video src="./Recursos/Videos-coches/trailer-2.mp4" 
+                    class="pantalla-pequeña"
+                    autoplay loop muted></video>
+                </span>
+
+                <span style="--i: 3">
+                    <video src="./Recursos/Videos-coches/trailer-3.mp4" 
+                    class="pantalla-pequeña"
+                    autoplay loop muted></video>
+                </span>
+
+            </div>
+            
+        </div>
+
+        <div id="galeria">
+
+            <div class="carousel">
+                <a class="carousel-item" href="#" onclick="cambiarVideo('mclaren-1');">
+                    <img src="./Recursos/Imagenes-coches/mclaren-1.jpg" alt="">
+                    <h4>765LT SPIDER</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="cambiarVideo('mclaren-2');">
+                    <img src="./Recursos/Imagenes-coches/mclaren-2.jpg" alt="">
+                    <h4 style="color: #92ff00;">ARTURA</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="cambiarVideo('mclaren-3');">
+                    <img src="./Recursos/Imagenes-coches/mclaren-3.jpeg" alt="">
+                    <h4 style="color: #ff0015;">7505</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="cambiarVideo('mclaren-4');">
+                    <img src="./Recursos/Imagenes-coches/mclaren-4.jpeg" alt="">
+                    <h4 style="color: #ff2e00;">765LT</h4>
+                </a>
+                <a class="carousel-item" href="#" onclick="cambiarVideo('mclaren-5');">
+                    <img src="./Recursos/Imagenes-coches/mclaren-5.jpeg" alt="">
+                    <h4 style="color: #bbc0dd;">7505 SPIDER</h4>
+                </a>
+              </div>
+
+        </div>
+
+    </div>
+
+    <ul id="nav-redes">
+        <li><a href="https://es-es.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube"></i></a></li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> <!--este script es para que funcione el carousel de materializeCSS -->
+    <script src="./JavaScript/McLarenJS.js"></script>
+    <!-- scripts para que funcione jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function(){$('.carousel').carousel();});
+    </script>
+    
+</body>
+</html>
