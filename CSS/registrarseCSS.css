@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --Color1: #0ef;
+    --Color2: #000;
+    --Color3: #333;
+    --Color4: #fff;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--Color2);
+}
+
+#caja_registro{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 5px solid var(--Color3);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#caja_registro:hover{
+    border: 5px solid var(--Color1);
+    box-shadow: 0 0 20px var(--Color1), inset 0 0 20px var(--Color1); /*esto es para que la caja tenga sombra por dentro y por fuera*/
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: var(--Color4);
+    transition: .5s;
+}
+
+#caja_registro:hover h2{
+    color: var(--Color1);
+}
+
+.introduc_datos{
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+
+.introduc_datos input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid var(--Color3);
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--Color4);
+    padding: 0 10px 0 35px;
+    transition: .5s;
+}
+
+#caja_registro:hover .introduc_datos input{
+    border: 2px solid var(--Color1);
+    box-shadow: 0 0 10px var(--Color1), inset 0 0 10px var(--Color1);
+}
+
+.introduc_datos input::placeholder{
+    color: rgba(255, 255, 255, .3);
+}
+
+.introduc_datos .iconos{
+    position: absolute;
+    left: 10px;
+    color: var(--Color4);
+    font-size: 1.2em;
+    line-height: 55px;
+    transition: .5s;
+}
+
+#caja_registro:hover .introduc_datos .iconos{
+    color: var(--Color1);
+}
+
+#introduc_datos_tipoUsu {
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+    color: var(--Color4);
+    transition: .5s;
+}
+
+#introduc_datos_tipoUsu select {
+    width: 100%;
+    height: 50px;
+    background: var(--Color2);
+    border: 2px solid var(--Color3);
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--Color4);
+    padding: 0 10px;
+    transition: .5s;
+}
+
+#caja_registro:hover #introduc_datos_tipoUsu select{
+    color: var(--Color1);
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: var(--Color3);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: var(--Color4);
+    font-weight: 500;
+    transition: .5s;
+}
+
+#caja_registro:hover button{
+    background: var(--Color1);
+    color: var(--Color2);
+    box-shadow: 0 0 20px var(--Color1);
+}
+
+#registrar_exit{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#registrar_exit a{
+    color: var(--Color4);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+#registrar_exit a:hover{
+    text-decoration: underline;
+}
+
+#caja_registro:hover #registrar_exit a{
+    color: var(--Color1);
+}
+
+#mensaje_error{
+    font-size: 0.8em;
+    margin: 10px;
+    text-align: center;
+    color: red !important;
+}
+
+@media screen and (max-width: 360px){
+    
+    #caja_registro{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+
+    .introduc_datos{
+        width: 290px;
+    }
+    
+}

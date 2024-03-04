@@ -131,7 +131,7 @@ function endQuiz() {
     clearInterval(timer);
     quizContainer.innerHTML = `<h2>Fin del juego</h2>
     <p>Puntos Finales: ${score} de ${questions.length}</p>
-    <p>Volver a la <a href="Contacto.php">Pagina anterior</a></p>`;
+    <p>Volver a la <a href="./PHP/Contacto.php">Pagina anterior</a></p>`;
     document.querySelector("button").style.display = "none";
 }
 

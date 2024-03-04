@@ -14,8 +14,9 @@
 }
 
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url(../Recursos/Fondos/fondo.jpg);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    /* background-image: url(../Recursos/Fondos/fondo.jpg); */
+    /* background-image: linear-gradient(327deg, #dd5e91 15%, #6d23ca 39%, #00e0be 63%, #14ff00 88%); */
     background-repeat: no-repeat;
     background-size: cover; /*esto es para cubrir todo el cuerpo*/
     background-attachment: fixed;/*esto es para fijar la imagen a todo el body*/
@@ -64,7 +65,7 @@ p{
 }
 
 #boton-destacado {
-    background-color: blue;
+    background-color: rgba(82, 20, 133, 0.767);
 }
 
 a:hover{
@@ -75,11 +76,29 @@ a:hover{
     text-align: center;
     margin-bottom: 10px;
     font-family: 'night_machine';
-    color: rgb(235, 54, 235);
+    color: rgb(56, 238, 192);
+}
+
+#all{
+    background: rgb(23, 90, 88);
 }
 
 #contenido{
     margin-bottom: 10px;
+    text-align: justify;
+    margin: 15px;
+}
+
+#contenido #informacion h2{
+    color: black;
+}
+
+#contenido #informacion h4{
+    color: black;
+}
+
+#contenido #informacion p{
+    color: black;
 }
 
 #informacion{
@@ -87,10 +106,10 @@ a:hover{
     text-align: justify;
 }
 
-#informacion p::first-letter{
+/* #informacion p::first-letter{
     color: rgb(0, 68, 255);
     font-size: 1.5em;
-}
+} */
 
 #informacion h2{
     text-align: center;
@@ -104,20 +123,11 @@ a:hover{
     font-size: 1.5em;
 }
 
-#informacion #listauno{
+#informacion .listas{
     padding: 10px;
     margin-left: 20px;
-    color: rgb(255, 0, 34);
-}
-
-#informacion #listados{
-    padding: 10px;
-    margin-left: 20px;
-    color: rgb(247, 0, 124);
-}
-
-strong{
-    color: crimson;
+    font-size: 1.2rem;
+    color: cadetblue;
 }
 
 #footer{

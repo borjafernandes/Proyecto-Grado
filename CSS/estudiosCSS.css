@@ -51,23 +51,25 @@ h1,h2,h3,h4{
 
 .contenidos a{
     text-decoration: none;
+    color: white;
 }
 
 .contenidos a:hover{
-    text-shadow: 2px 2px 4px rgb(255, 0, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.671);
 }
 
 #submenu {
     display: none;
     position: absolute;
-    background: linear-gradient(to bottom, rgb(255, 217, 0), rgb(1, 252, 177));
+    /* background: linear-gradient(to bottom, rgb(255, 217, 0), rgb(1, 252, 177)); */
+    background: rgb(86, 87, 77);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 5px;
 }
 
 #submenu a:hover{
-    color: white;
+    color: rgba(119, 115, 115, 0.582);
 }
 
 #videos:hover #submenu {
@@ -75,7 +77,8 @@ h1,h2,h3,h4{
 }
 
 #caja-contenido{
-    background: linear-gradient(to bottom, rgb(255, 213, 0), rgb(1, 252, 231));
+    /* background: linear-gradient(to bottom, rgb(255, 213, 0), rgb(1, 252, 231)); */
+    background: rgb(86, 87, 77);
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
@@ -83,7 +86,7 @@ h1,h2,h3,h4{
 
 #mostrarImagen{
     margin: 15px;
-    background-color: blue;
+    background: rgb(86, 87, 77);
     color: white;
     border: 2px solid;
     padding: 6px;
@@ -91,12 +94,44 @@ h1,h2,h3,h4{
 }
 
 #mostrarImagen:hover{
-    background-color:  crimson;
-    color: white;
+    background-color:  rgba(255, 255, 255, 0.541);
+    color: black;
 }
 
 #cabezera{
     margin-bottom: 10px;
+}
+
+#contenido #descripcion{
+    padding: 20px;
+}
+
+#contenido #descripcion p{
+    color: white;
+}
+
+#contenido #contenido-curso{
+    padding: 20px;
+}
+
+#contenido #contenido-curso p{
+    color: white;
+}
+
+#contenido #contenido-curso ul{
+    color: white;
+}
+
+#contenido #incluye{
+    padding: 20px;
+}
+
+#contenido #incluye p{
+    color: white;
+}
+
+#contenido #incluye ul{
+    color: white;
 }
 
 #footer{
@@ -107,7 +142,7 @@ h1,h2,h3,h4{
 #pie p{
     margin: 10px;
     padding: 10px;
-    color: rgb(148, 78, 78);
+    color: rgba(209, 59, 0, 0.678);
 }
 
 #footer a{
