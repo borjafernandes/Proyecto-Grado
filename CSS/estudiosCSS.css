@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'Chopsic';
-    src: url(../Fuentes_Letras/Chopsic.otf) format('truetype');
+    src: url(../Recursos/Fonts/Chopsic.otf) format('truetype');
 }
 
 @font-face {
     font-family: 'Signs';
-    src: url(../Fuentes_Letras/American\ Signs.otf) format('truetype');
+    src: url(../Recursos/Fonts/American\ Signs.otf) format('truetype');
 }
 
 #titulo-y-boton {

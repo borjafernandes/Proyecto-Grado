@@ -5,12 +5,12 @@
 
 @font-face {
     font-family: 'night_machine';
-    src: url(../Fuentes_Letras/night_machine/Night\ Machine.otf) format('truetype');
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
 }
 
 @font-face {
     font-family: 'WrathStyles';
-    src: url(../Fuentes_Letras/anger_styles/WrathStyles.ttf) format('truetype');
+    src: url(../Recursos/Fonts/anger_styles/WrathStyles.ttf) format('truetype');
 }
 
 body{
