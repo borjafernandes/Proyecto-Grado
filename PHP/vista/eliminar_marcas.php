@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Marcas</title>
+    <link rel="icon" type="image/png" href="../../Recursos/Iconos/rueda-de-fuego.png">
     <style>
         *{
             margin: 0;
@@ -86,7 +87,15 @@
     <h1>Eliminar Marcas</h1>
 
     <?php
-        $instruccion = "SELECT * FROM marcas";
+    // Verificar si hay un mensaje de error
+    if (isset($_GET['error'])) 
+    {
+        echo '<p class="error-message">' . $_GET['error'] . '</p>';
+    }
+    ?>
+
+    <?php
+        $instruccion = "SELECT * FROM marca";
         $consulta = mysqli_query($conexion, $instruccion);
 
         if ($consulta == false) {
@@ -107,8 +116,8 @@
                     while($resultado = mysqli_fetch_assoc($consulta)){
                         ?>
                         <tr>
-                            <td><?php echo $resultado['nombre_marca']?></td>
-                            <td><input type="checkbox" name="borrar[]" value="<?= $resultado['id_marca']?>"></td>
+                            <td><?php echo $resultado['nombre']?></td>
+                            <td><input type="checkbox" name="borrar[]" value="<?= $resultado['id']?>"></td>
                         </tr><?php
                     } ?>
                 </table>
@@ -127,13 +136,6 @@
 
     <p>Volver a la <a href="../Pagina-BD.php">Pagina de Gestion</a></p>
 
-    <?php
-    // Verificar si hay un mensaje de error
-    if (isset($_GET['error'])) 
-    {
-        echo '<p class="error-message">' . $_GET['error'] . '</p>';
-    }
-    ?>
 
 </body>
 </html>

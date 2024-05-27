@@ -1,0 +1,43 @@
+
+#footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: 'WrathStyles';
+}
+
+#footer div{
+    margin: 20px;
+}
+
+#footer #enlacegit #github img{ 
+    width: 30px;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+#footer a:visited{
+    color: rgb(142, 54, 241);
+}
+
+#footer .container_footer a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+#footer .container_footer a img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}

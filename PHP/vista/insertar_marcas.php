@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insertar Marcas</title>
+    <link rel="icon" type="image/png" href="../../Recursos/Iconos/rueda-de-fuego.png">
     <style>
         *{
             margin: 0;
@@ -76,12 +77,27 @@
 </head>
 <body>
     <?php include("../modelo/conexion.php");?>
-    <h1>Insercion de Marcas</h1>
+    <h1>Inserción de Marcas</h1>
     <form action="../modelo/funciones_insert-Marcas.php" method="post">
 
-    <label for="nombre">Marca del Coche:</label>
+    <?php
+        // Consulta para obtener el máximo ID de marca
+        $consulta_max_id = "SELECT MAX(id) AS max_id FROM marca";
+        $resultado_max_id = mysqli_query($conexion, $consulta_max_id);
+        $fila_max_id = mysqli_fetch_assoc($resultado_max_id);
+        $ultimo_id_marca = $fila_max_id['max_id']; // Obtener el último ID
+        
+        echo "Último ID Introducido: $ultimo_id_marca";
+    ?>    
+
+    <label for="id">ID de la Marca:</label>
+    <input type="number" name="id" size="50" maxlength="50">
+    <br><br>
+
+    <label for="nombre">Nombre de la Marca:</label>
     <input type="text" name="nombre" size="50" maxlength="50">
     <br><br>
+    
     <input type="submit" name="insertar" value="Insertar Marca">
     </form>
     <p>Volver a la <a href="../Pagina-BD.php">Pagina de Gestion</a></p>

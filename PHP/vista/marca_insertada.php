@@ -60,9 +60,11 @@
     <br><br>
     <table>
         <tr>
+            <th>ID</th>
             <th>Nombre</th>
         </tr>
         <tr>
+            <td><?= $id?></td>
             <td><?= $nombre?></td>
         </tr>
     </table>

@@ -1,0 +1,233 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+
+    #articulo2 {
+        flex-direction: column;
+        text-align: center;
+        margin: 0 0 20px;
+    }
+
+    #box-imagenPrueba img{
+        width: 100%;
+    }
+
+    #header h1{
+        font-size: 3em;
+    }
+
+    #header img{
+        display: none;
+    }
+
+    #accesbd{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #iconoluna{
+        top: 15px;
+        right: 2px;
+        font-size: 4em;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #articulo2 {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    #box-imagenPrueba img{
+        width: 100%;
+    }
+
+}
+
+body{
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    transition: all 0.5s ease;
+    scroll-behavior: smooth; /*esto sirve para qeu al pulsar en los 
+    enlaces de la pagina no se vea tan brusco el movimiento de desplazamiento*/
+}
+
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'WrathStyles';
+    src: url(../Recursos/Fonts/anger_styles/AngerStyles.ttf) format('truetype');
+}
+
+h1{
+    font-family: 'night_machine';
+    font-size: 4.5em;
+    color: #222;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+#logomarca{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+#btncambiarmodo{
+    display: none; /*Esto es para que no se vea el checkbox*/
+}
+
+.boton-destacado {
+    background-color: rgb(109, 224, 15);
+}
+
+#iconoluna{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    font-size: 2em;
+    color: black;
+    cursor: pointer;
+}
+
+.carousel{
+    width: 800px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#contenidosecundario{
+    background-color: #333;
+    margin-top: 20px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+#contenidosecundario h3{
+    color: aliceblue;
+    padding: 15px;
+}
+
+#contenidosecundario #articulo2 p{
+    color: aliceblue;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#articulo2{
+    display: flex;
+    text-align: justify;
+}
+ 
+#box-imagenPrueba{
+    margin: 20px;
+    padding: 20px;
+}
+ 
+#imagencochevista{
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 10px rgb(174, 0, 255); */
+    width: 450px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(235, 212, 212, 0.733);
+    transition: transform 0.3s ease;
+}
+
+#imagencochevista:hover {
+    transform: translateY(-5px); 
+}
+
+#textoInfo{
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(80, 76, 76, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.card-title {
+    color: #333; 
+    font-weight: bold;
+}
+
+.card-text {
+    color: #555;
+}
+
+.card-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: #0056b3;
+}
+
+/* apartado para el icono del coche  */
+#lottie-car, .text-overlay {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ov-btn-grow-skew-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px; 
+    text-align: center;
+    display: none;
+}

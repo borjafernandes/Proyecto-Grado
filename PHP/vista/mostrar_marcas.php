@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!--enlace para que 
+    funcione todo lo de boostrap-->
+    <link rel="icon" type="image/png" href="../../Recursos/Iconos/rueda-de-fuego.png">
     <?php
         include("../modelo/conexion.php");
         include("../modelo/fecha.php");
         include("../modelo/sesion.php");
-        include("saludo.php");
+        // include("saludo.php");
     ?>
     <style>
         *{
@@ -61,9 +64,6 @@
             text-decoration: none;
             color: #0066CC;
         }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -71,7 +71,7 @@
     <h1>Marcas de Coches en la Base de Datos</h1>
 
     <?php
-        $instruccion = "SELECT * FROM marcas";
+        $instruccion = "SELECT * FROM marca";
         $consulta = mysqli_query($conexion, $instruccion);
 
         if ($consulta == false) {
@@ -90,7 +90,7 @@
                     while($resultado = mysqli_fetch_assoc($consulta)){
                         ?>
                         <tr>
-                            <td><?php echo $resultado['nombre_marca']?></td>
+                            <td><?php echo $resultado['nombre']?></td>
                         </tr><?php
                     } ?>
                 </table>
@@ -104,9 +104,9 @@
         mysqli_close($conexion);
     ?>
 
-    <p>Volver a la <a href="../Pagina-BD.php">Pagina de Gestion</a></p>
+    <!-- <p>Volver a la <a href="../Pagina-BD.php">Pagina de Gestion</a></p> -->
+    <a href="../Pagina-BD.php" class="btn btn-success">Volver</a>    
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- este script es de boostrap -->
 </body>
 </html>

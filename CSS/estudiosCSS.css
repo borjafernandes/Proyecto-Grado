@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
 @font-face {
     font-family: 'Chopsic';
     src: url(../Recursos/Fonts/Chopsic.otf) format('truetype');
@@ -13,17 +8,28 @@
     src: url(../Recursos/Fonts/American\ Signs.otf) format('truetype');
 }
 
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #titulo-y-boton {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#imagen{
+#imagen {
     text-align: center;
 }
 
-#imagencentro{
+#imagencentro {
     border-radius: 20px;
 }
 
@@ -35,12 +41,12 @@ img {
     margin-left: 30px;
 }
 
-h1,h2,h3,h4{
+h1, h2, h3, h4 {
     text-align: center;
-    font-family: 'Chopsic';
+    font-family: 'night_machine';
 }
 
-#barraNavegacion nav{
+/* #barraNavegacion nav {
     font-family: Courier 1.4em silver;
     display: flex;
     align-items: center;
@@ -49,107 +55,91 @@ h1,h2,h3,h4{
     font-family: 'Signs';
 }
 
-.contenidos a{
+.contenidos a {
     text-decoration: none;
-    color: white;
+    color: #FF6500;
 }
 
-.contenidos a:hover{
+.contenidos a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.671);
 }
 
 #submenu {
     display: none;
     position: absolute;
-    /* background: linear-gradient(to bottom, rgb(255, 217, 0), rgb(1, 252, 177)); */
-    background: rgb(86, 87, 77);
+    background: #C40C0C; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 5px;
 }
 
-#submenu a:hover{
-    color: rgba(119, 115, 115, 0.582);
+#submenu a:hover {
+    color: rgba(41, 31, 31, 0.884);
 }
 
 #videos:hover #submenu {
     display: block;
-}
+} */
 
-#caja-contenido{
-    /* background: linear-gradient(to bottom, rgb(255, 213, 0), rgb(1, 252, 231)); */
-    background: rgb(86, 87, 77);
+#caja-contenido {
+    background: #535151; 
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
 }
 
-#mostrarImagen{
+#mostrarImagen {
     margin: 15px;
-    background: rgb(86, 87, 77);
-    color: white;
-    border: 2px solid;
+    background: #C40C0C; 
+    color: #fff; 
+    border: 2px solid #FF8A08; 
     padding: 6px;
     border-radius: 15px;
 }
 
-#mostrarImagen:hover{
+#mostrarImagen:hover {
     background-color:  rgba(255, 255, 255, 0.541);
-    color: black;
+    color: #000; 
 }
 
-#cabezera{
+#cabezera {
     margin-bottom: 10px;
+    padding: 40px;
 }
 
-#contenido #descripcion{
+#contenido #descripcion {
     padding: 20px;
 }
 
-#contenido #descripcion p{
-    color: white;
+#contenido #descripcion p {
+    color: #fff; 
 }
 
-#contenido #contenido-curso{
+#contenido #contenido-curso {
     padding: 20px;
 }
 
-#contenido #contenido-curso p{
-    color: white;
+#contenido #contenido-curso p {
+    color: #fff; 
 }
 
-#contenido #contenido-curso ul{
-    color: white;
+#contenido #contenido-curso ul {
+    color: #fff; 
 }
 
-#contenido #incluye{
+#contenido #incluye {
     padding: 20px;
 }
 
-#contenido #incluye p{
-    color: white;
+#contenido #incluye p {
+    color: #fff; 
 }
 
-#contenido #incluye ul{
-    color: white;
+#contenido #incluye ul {
+    color: #fff; 
 }
 
-#footer{
+#footer {
     font-family: 'Signs';
     text-align: center;
-}
-
-#pie p{
-    margin: 10px;
-    padding: 10px;
-    color: rgba(209, 59, 0, 0.678);
-}
-
-#footer a{
-    margin-right: 10px; 
-    color: violet;
-}
-
-#footer a:visited{
-    color: rgb(142, 54, 241);
 }

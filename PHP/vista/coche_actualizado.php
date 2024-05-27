@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coche Actualizado</title>
+    <?php
+        // Obtener las variables necesarias de la URL
+        $nombre = $_GET['nombre'];
+        $marca = $_GET['marca'];
+        $modelo = $_GET['modelo'];
+        $fecha_fabricacion = $_GET['fecha_fabricacion'];
+        $precio = $_GET['precio'];
+        $cv = $_GET['cv'];
+        $tipocombustible = $_GET['tipocombustible'];
+        $distintivo = $_GET['distintivo'];
+        $descripcion = $_GET['descripcion'];
+    ?>
+    
     <style>
         *{
             margin: 0;
@@ -64,8 +77,12 @@
         <li>Nombre: <?=$nombre?></li>
         <li>Marca: <?=$marca?></li>
         <li>Modelo: <?=$modelo?></li>
-        <li>Año de Fabricacion: <?=date ("d-m-Y")?></li>
+        <li>Fecha de Fabricación: <?=date ("d-m-Y")?></li>
         <li>Precio: <?=$precio?></li>
+        <li>Potencia: <?=$cv?> CV</li>
+        <li>Combustible: <?=$tipocombustible?></li>
+        <li>Distintivo: <?=$distintivo?></li>
+        <li>Descripción: <?=$descripcion?></li>
     </ul>
     <br>
     <p><a href='../vista/mostrar_coches.php'>Volver a la Pagina Anterior</a></p>

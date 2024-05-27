@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/registrarseCSS.css">
+    <link rel="icon" type="image/png" href="../../Recursos/Iconos/rueda-de-fuego.png">
     <title>Registro de Usuario</title>
 </head>
 <body>
@@ -15,20 +16,18 @@
 
         <div class="introduc_datos">
           <span class="iconos"><ion-icon name="person"></ion-icon></span> <!-- iconos de otra pagina web -->
-          <input type="text" name="usuario" placeholder="Usuario" required>
+          <input type="text" name="inputUsuario" placeholder="Usuario" required>
         </div>
 
         <div class="introduc_datos">
           <span class="iconos"><ion-icon name="lock-closed"></ion-icon></span> <!-- iconos de otra pagina web -->
-          <input type="password" name="contrasenya" placeholder="Contraseña" required>
+          <input type="password" name="inputPassword" placeholder="Contraseña" required>
         </div>
 
         <!-- <div id="introduc_datos_tipoUsu">
             <select name="tipo_usuario" required>
-                <option value="selecion">Tipo de Usuario</option>
-                <option value="administrador">Administrador</option>
-                <option value="intermediario">Intermediario</option>
-                <option value="visitante">Visitante</option>
+                <option value="selecion">Tipos de Usuario</option>
+                <option value="2">Usuario</option>
             </select>
         </div> -->
 
@@ -36,7 +35,7 @@
 
         <div id="registrar_exit">
           <p><a href="logearse.php">Ya tengo Cuenta</a></p>
-          <p><a href="../../PaginaPrincipal.html">Pagina Principal</a></p>
+          <p><a href="../PaginaPrincipal.php">Pagina Inicial</a></p>
         </div>
 
         <?php

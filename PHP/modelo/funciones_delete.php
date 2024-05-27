@@ -77,7 +77,9 @@ if (isset($_POST['eliminar'])) {
         for ($i = 0; $i < $numfilas; $i++) { 
             
             $idCoche = $_POST['borrar'][$i];
-            $instruccion = "SELECT * FROM coches WHERE id_coche = $idCoche";
+            $instruccion = "SELECT coche.nombre, marca.nombre AS nombre_marca, coche.modelo, coche.fecha_fabricacion, coche.precio AS precio FROM coche 
+            INNER JOIN marca ON coche.marca = marca.id 
+            WHERE coche.id = $idCoche";
             $consulta = mysqli_query($conexion, $instruccion);
             
             if (!$consulta) {
@@ -87,14 +89,14 @@ if (isset($_POST['eliminar'])) {
             $resultado = mysqli_fetch_assoc($consulta);
             ?>
             <tr>
-                <td><?= $resultado['nombre_coche']?></td>
-                <td><?= $resultado['marca']?></td>
+                <td><?= $resultado['nombre']?></td>
+                <td><?= $resultado['nombre_marca']?></td>
                 <td><?= $resultado['modelo']?></td>
-                <td><?= date2string($resultado['anio_fabricacion'])?></td>
-                <td><?= $resultado['precio']?></td>
+                <td><?= date2string($resultado['fecha_fabricacion'])?></td>
+                <td><?= $resultado['precio']?> $</td>
             </tr>
             <?php
-            mysqli_query($conexion, "DELETE FROM coches WHERE id_coche = $idCoche");
+            mysqli_query($conexion, "DELETE FROM coche WHERE id = $idCoche");
         }
         ?>
         </table>

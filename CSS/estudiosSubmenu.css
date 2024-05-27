@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu.show {
+    display: block;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; 
+}
+
+.navbar-nav {
+    margin: auto;
+    font-family: 'night_machine';
+}
+
+.navbar {
+    border-radius: 10px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}

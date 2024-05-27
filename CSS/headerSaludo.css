@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
+}
+
+h1{
+    font-family: 'night_machine';
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#logomarca{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}

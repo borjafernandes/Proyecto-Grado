@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Coches</title>
+    <link rel="icon" type="image/png" href="../../Recursos/Iconos/rueda-de-fuego.png">
     <style>
         *{
             margin: 0;
             padding: 0;
-            box-sizing: 0;
         }
         body {
             font-family: 'Arial', sans-serif;
@@ -21,7 +21,7 @@
             margin-top: 30px;
         }
         form {
-            max-width: 800px;
+            max-width: 900px;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
@@ -84,8 +84,19 @@
     <h1>Eliminar Coches</h1>
 
     <?php
-        $instruccion = "SELECT id_coche,nombre_coche,marca,modelo,anio_fabricacion,precio 
-        FROM coches INNER JOIN marcas WHERE coches.marca = marcas.id_marca";
+    // Verificar si hay un mensaje de error
+    if (isset($_GET['error'])) 
+    {
+        echo '<p class="error-message">' . $_GET['error'] . '</p>';
+    }
+    ?>
+
+    <?php
+        $instruccion = "SELECT coche.id, coche.nombre, marca.nombre AS nombre_marca, coche.modelo, coche.fecha_fabricacion, coche.precio, coche.potencia, tipocombustible.descripcion AS combustible, distintivo.descripcion AS distintivo FROM coche 
+        INNER JOIN marca ON coche.marca = marca.id 
+        INNER JOIN distintivo ON coche.id_distintivo = distintivo.id 
+        INNER JOIN tipocombustible ON coche.id_combustible = tipocombustible.id
+        ORDER BY coche.nombre ASC";
         $consulta = mysqli_query($conexion, $instruccion);
 
         if ($consulta == false) {
@@ -104,18 +115,24 @@
                         <th>Modelo</th>
                         <th>Año</th>
                         <th>Precio</th>
+                        <th>Potencia</th>
+                        <th>Combustible</th>
+                        <th>Distintivo</th>
                         <th>Borrar</th>
                     </tr>
                     <?php
                     while($resultado = mysqli_fetch_assoc($consulta)){
                         ?>
                         <tr>
-                            <td><?php echo $resultado['nombre_coche']?></td>
-                            <td><?php echo $resultado['marca']?></td>
+                            <td><?php echo $resultado['nombre']?></td>
+                            <td><?php echo $resultado['nombre_marca']?></td>
                             <td><?php echo $resultado['modelo']?></td>
-                            <td><?php echo date2string($resultado['anio_fabricacion'])?></td>
+                            <td><?php echo date2string($resultado['fecha_fabricacion'])?></td>
                             <td><?php echo $resultado['precio']?></td>
-                            <td><input type="checkbox" name="borrar[]" value="<?= $resultado['id_coche']?>"></td>
+                            <td><?php echo $resultado['potencia']?> CV</td>
+                            <td><?php echo $resultado['combustible']?></td>
+                            <td><?php echo $resultado['distintivo']?></td>
+                            <td><input type="checkbox" name="borrar[]" value="<?= $resultado['id']?>"></td>
                         </tr><?php
                     } ?>
                 </table>
@@ -134,13 +151,6 @@
 
     <p>Volver a la <a href="../Pagina-BD.php">Pagina de Gestion</a></p>
 
-    <?php
-    // Verificar si hay un mensaje de error
-    if (isset($_GET['error'])) 
-    {
-        echo '<p class="error-message">' . $_GET['error'] . '</p>';
-    }
-    ?>
 
 </body>
 </html>

@@ -21,7 +21,8 @@ if (isset($_POST['enviar']))
         $inputPassword = mysqli_real_escape_string($conexion, $inputPassword);
 
         // Consultar la base de datos para obtener el hash de la contraseña asociada al usuario
-        $sql = "SELECT contrasenya, usuario, tipo_usuario FROM usuarios WHERE usuario = '$usuario'";
+        $sql = "SELECT usuario.usuario, usuario.contrasenya, usuario.id_tipousuario FROM usuario
+        INNER JOIN tipousuario ON usuario.id_tipousuario = tipousuario.id WHERE usuario = '$usuario'";
         $resultado = mysqli_query($conexion, $sql);
 
         // Verificar si hubo algún error al ejecutar la consulta
@@ -40,15 +41,15 @@ if (isset($_POST['enviar']))
             {
                 //Acceso concedido -> La contraseña es correcta               
                 $nombre = $row['usuario'];
-                $tipo_usuario = $row['tipo_usuario'];
+                $tipo_usuario = $row['id_tipousuario'];
 
                 // almacenamos el usuario en la sesión
                 session_start();
                 $_SESSION['nombre'] = $nombre;
-                $_SESSION['tipo_usuario'] = $tipo_usuario;
+                $_SESSION['id_tipousuario'] = $tipo_usuario;
 
                 // Redireccionar a la página de login con un mensaje de error
-                header("Location: ../Pagina-BD.php");
+                header("Location: ../BuscadorCoches.php");
                 exit();
             } 
             else 

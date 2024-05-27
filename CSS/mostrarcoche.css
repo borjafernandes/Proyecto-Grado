@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
+}
+
+#nombrecoche{
+    font-family: 'night_machine';
+}
+
+#back {
+    position: relative;
+    margin: 0;
+    padding: 0.8em 1em;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 300;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+#back:hover {
+animation: sh0 0.5s ease-in-out both;
+}
+
+#back:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+#back::before,
+#back::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+    z-index: -1;
+    transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+#back:hover::before,
+#back:hover::after {
+    opacity: 0.15;
+    transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+#back:hover::before {
+    transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+#back:hover::after {
+    transform: translate(50%, 0) scale(1.1);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    width: 100%;
+}
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .card {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .card-img-top {
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+    }
+
+    .card-body {
+        flex: 1;
+        margin-left: 20px;
+    }
+}
+
+@keyframes sh0 {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(7deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-7deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}

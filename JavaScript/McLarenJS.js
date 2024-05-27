@@ -68,7 +68,7 @@ function obtenerMcLaren() {
     obtenerMcLarenEnlace.addEventListener("click", function (event) {
         event.preventDefault(); // Evita que el enlace realice la acción por defecto (navegar a otra página)
 
-        alert("No vas a tener un McLaren en tu vida. Mejor ponte a estudiar VAGO!!!!");
+        alert("¡Lo sentimos no nos quedan más Coches en el Almacen, Vuelva a intentarlo más tarde.!");
 
     });
 }

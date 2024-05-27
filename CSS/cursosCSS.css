@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
+}
+
+body {
+    background-color: #343a40;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; 
+    font-family: 'night_machine';
+}
+
+header nav a:hover {
+    background-color: #ffa500;
+    color: #000;
+}
+
+#logomarca{
+    width: 50px;
+    height: 50px;
+}
+
+span{
+    font-family: 'night_machine';
+}
+
+h1,h2,h3,h4{
+    font-family: 'night_machine';
+}
+
+.card, .pricing-header {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.text-body-emphasis {
+    color: #fff;
+}
+
+.text-body-secondary {
+    color: #ccc;
+}
+
+footer {
+    color: #727171;
+}

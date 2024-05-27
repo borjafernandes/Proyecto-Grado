@@ -51,8 +51,8 @@
 </head>
 <body>
 
-    <h2>Resultado de la inserccion</h2>
-    <p>El vehiculo se ha añadido Correctamente</p>
+    <h2>Resultado de la inserción</h2>
+    <p>El vehículo se ha añadido correctamente.</p>
     <br><br>
     <table>
         <tr>
@@ -63,10 +63,10 @@
             <td>Nombre</td>
             <td><?= $nombre ?></td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td>Marca</td>
             <td><?= $marca ?></td>
-        </tr>
+        </tr> -->
         <tr>
             <td>Modelo</td>
             <td><?= $modelo ?></td>
@@ -79,9 +79,29 @@
             <td>Precio</td>
             <td><?= $precio ?>$</td>
         </tr>
+        <tr>
+            <td>Potencia (CV)</td>
+            <td><?= $potencia ?></td>
+        </tr>
+        <!-- <tr>
+            <td>Tipo de Combustible</td>
+            <td><?= $id_combustible ?></td>
+        </tr> -->
+        <tr>
+            <td>Matrícula</td>
+            <td><?= $matricula ?></td>
+        </tr>
+        <tr>
+            <td>Observaciones</td>
+            <td><?= $observaciones ?></td>
+        </tr>
+        <!-- <tr>
+            <td>Distintivo</td>
+            <td><?= $id_distintivo ?></td>
+        </tr> -->
     </table>
     <br><br>
-    <p>Volver a la <a href="../Pagina-BD.php">Pagina de Gestion</a></p>
+    <p>Volver a la <a href="../Pagina-BD.php">Página de Gestión</a></p>
 
 </body>
 </html>

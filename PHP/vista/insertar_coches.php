@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insertar Coches</title>
+    <link rel="icon" type="image/png" href="../../Recursos/Iconos/rueda-de-fuego.png">
     <style>
         *{
             margin: 0;
@@ -34,7 +35,7 @@
             font-size: 18px;
             color: #333;
         }
-        input {
+        input, select {
             width: 100%;
             padding: 10px;
             margin-top: 8px;
@@ -72,7 +73,7 @@
 </head>
 <body>
     <?php include("../modelo/conexion.php");?>
-    <h1>Insercion de Coches</h1>
+    <h1>Inserción de Coches</h1>
 
     <form action="../modelo/funciones_insert.php" method="post">
 
@@ -80,21 +81,57 @@
     <input type="text" name="nombre" size="50" maxlength="50">
     <br><br>
     <label for="marca">Marca del Coche:</label>
-    <input type="text" name="marca" size="50" maxlength="50">
+    <select name="marca">
+        <?php
+        $consulta_marca = mysqli_query($conexion, "SELECT * FROM marca");
+        while ($marca = mysqli_fetch_assoc($consulta_marca)) {
+            echo "<option value='{$marca['id']}'>{$marca['nombre']}</option>";
+        }
+        ?>
+    </select>
     <br><br>
     <label for="modelo">Modelo del Coche:</label>
     <input type="text" name="modelo" size="50" maxlength="50">
     <br><br>
-    <label for="anio">Año de Fabricacion:</label>
+    <label for="anio">Año de Fabricación:</label>
     <input type="date" name="anio">
     <br><br>
     <label for="precio">Precio del Coche:</label>
     <input type="number" name="precio">
     <br><br>
+    <label for="potencia">Potencia (CV):</label>
+    <input type="number" name="potencia">
+    <br><br>
+    <label for="id_combustible">Tipo de Combustible:</label>
+    <select name="id_combustible">
+        <?php
+        $consulta_combustible = mysqli_query($conexion, "SELECT * FROM tipocombustible");
+        while ($combustible = mysqli_fetch_assoc($consulta_combustible)) {
+            echo "<option value='{$combustible['id']}'>{$combustible['descripcion']}</option>";
+        }
+        ?>
+    </select>
+    <br><br>
+    <label for="matricula">Matrícula del Coche:</label>
+    <input type="text" name="matricula" maxlength="10">
+    <br><br>
+    <label for="observaciones">Observaciones:</label>
+    <textarea name="observaciones" rows="4" cols="50"></textarea>
+    <br><br>
+    <label for="id_distintivo">Distintivo:</label>
+    <select name="id_distintivo">
+        <?php
+        $consulta_distintivo = mysqli_query($conexion, "SELECT * FROM distintivo");
+        while ($distintivo = mysqli_fetch_assoc($consulta_distintivo)) {
+            echo "<option value='{$distintivo['id']}'>{$distintivo['descripcion']}</option>";
+        }
+        ?>
+    </select>
+    <br><br>
     <input type="submit" name="insertar" value="Insertar Coche">
     </form>
     <p>(Todos los campos son OBLIGATORIOS)</p>
-    <p>Volver a la <a href="../Pagina-BD.php">Pagina de Gestion</a></p>
+    <p>Volver a la <a href="../Pagina-BD.php">Página de Gestión</a></p>
 
     <?php
     // Verificar si hay un mensaje de error

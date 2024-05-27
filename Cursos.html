@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/cursosCSS.css">
+    <link rel="icon" type="image/png" href="/Recursos/Iconos/rueda-de-fuego.png">
+    <title>Cursos</title>
+</head>
+<body>
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="./PHP/PaginaPrincipal.php" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                    <img src="Recursos/Iconos/rueda-de-fuego.png" alt="logo" id="logomarca">
+                    <span class="fs-4 text-white">The University of Driving</span>
+                </a>
+            
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="./PHP/Contacto.php">Contacto</a>
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="./PHP/Drifting.php">Drifting</a>
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="MotosSport.html">Motos</a>
+                    <a class="py-2 link-body-emphasis text-decoration-none text-white" href="McLaren.html">McLaren</a>
+                </nav>
+            </div>
+        
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal text-white">Cursos de Drifting</h1>
+                <p class="fs-5 text-secondary">Conviértete en un experto del drifting con nuestros cursos especializados.</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Gratis</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$99<small class="text-secondary fw-light">/curso</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Introducción al drifting</li>
+                                <li>10 horas de práctica</li>
+                                <li>Equipamiento incluido</li>
+                            </ul>
+                            <a href="./PHP/pagarCurso.php" class="w-100 btn btn-lg btn-outline-primary">Me apunto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">Intermedio</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$199<small class="text-secondary fw-light">/curso</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Técnicas avanzadas de drifting</li>
+                                <li>20 horas de práctica</li>
+                                <li>Asesoramiento personalizado</li>
+                            </ul>
+                            <a href="./PHP/pagarCurso.php" class="w-100 btn btn-lg btn-primary">Me inscribo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Avanzado</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$299<small class="text-secondary fw-light">/curso</small></h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Competición y perfeccionamiento</li>
+                                <li>30 horas de práctica intensiva</li>
+                                <li>Entrenador profesional</li>
+                            </ul>
+                            <a href="./PHP/pagarCurso.php" class="w-100 btn btn-lg btn-primary">¡Quiero ser un pro!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <h2 class="display-6 text-center mb-4">Comparacion de Planes</h2>
+        
+            <div class="table-responsive">
+                <table class="table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 34%;" class="bg-secondary"></th>
+                            <th style="width: 22%;" class="bg-secondary">Principiante</th>
+                            <th style="width: 22%;" class="bg-secondary">Intermedio</th>
+                            <th style="width: 22%;" class="bg-secondary">Avanzado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="bg-secondary text-start">Nivel de habilidad</th>
+                            <td class="bg-secondary">Principiante</td>
+                            <td class="bg-secondary">Intermedio</td>
+                            <td class="bg-secondary">Avanzado</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="bg-secondary text-start">Horas de práctica</th>
+                            <td class="bg-secondary">10</td>
+                            <td class="bg-secondary">20</td>
+                            <td class="bg-secondary">30</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="bg-secondary text-start">Asesoramiento</th>
+                            <td class="bg-secondary">No</td>
+                            <td class="bg-secondary">Sí</td>
+                            <td class="bg-secondary">Sí</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="bg-secondary text-start">Entrenador profesional</th>
+                            <td class="bg-secondary">No</td>
+                            <td class="bg-secondary">No</td>
+                            <td class="bg-secondary">Sí</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="bg-secondary text-start">Precio</th>
+                            <td class="bg-secondary">$99</td>
+                            <td class="bg-secondary">$199</td>
+                            <td class="bg-secondary">$299</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="Recursos/Iconos/rueda-de-fuego.png" alt="" width="44" height="44">
+                    <small class="d-block mb-3 text-secondary">2023–2024</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="text-white">Nombre</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Borja</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="text-white">Apellido</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Fernandes Augusto</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5 class="text-white">Curso</h5>
+                    <ul class="list-unstyled text-small">
+                        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">2ºDAW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+.ov-btn-grow-skew-reverse {
+    background: #333;
+    color: white;
+    border: 2px solid #333;
+    padding: 16px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-grow-skew-reverse:hover {
+    color: #333;
+}
+
+.ov-btn-grow-skew-reverse::after {
+    content: "";
+    background: linear-gradient(to right, #ff7f0e, #ff0000);
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(45deg) scale(0, 1);
+    transition: all 0.3s ease;
+}
+
+.ov-btn-grow-skew-reverse:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(45deg) scale(1, 1);
+}

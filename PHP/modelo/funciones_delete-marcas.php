@@ -81,7 +81,7 @@
                     <?php
                     for ($i = 0; $i < $numfilas; $i++) {
                         $idmarca = $_POST['borrar'][$i];
-                        $instruccion = "SELECT * FROM marcas WHERE id_marca = $idmarca";
+                        $instruccion = "SELECT * FROM marca WHERE id = $idmarca";
                         $consulta = mysqli_query($conexion, $instruccion);
                         if (!$consulta) {
                             die("Error en la consulta: " . mysqli_error($conexion));
@@ -89,10 +89,10 @@
                         $resultado = mysqli_fetch_assoc($consulta);
                         ?>
                         <tr>
-                            <td><?= $resultado['nombre_marca'] ?></td>
+                            <td><?= $resultado['nombre'] ?></td>
                         </tr>
                         <?php
-                        mysqli_query($conexion, "DELETE FROM marcas WHERE id_marca = $idmarca");
+                        mysqli_query($conexion, "DELETE FROM marca WHERE id = $idmarca");
                     }
                     ?>
                 </tbody>

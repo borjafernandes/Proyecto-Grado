@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../CSS/logearseCSS.css">
-    <title>Logearse</title>
+    <link rel="icon" type="image/png" href="../../Recursos/Iconos/rueda-de-fuego.png">
+    <title>Login</title>
 </head>
 <body>
 
@@ -12,7 +13,7 @@
     <div id="caja_log">
 
       <form action='../modelo/comprobarLogin.php' method='post'>
-        <h2>Logearse</h2>
+        <h2>Login</h2>
 
         <div class="introduc_datos">
           <span class="iconos"><ion-icon name="person"></ion-icon></span> <!-- iconos de otra pagina web -->
@@ -29,8 +30,8 @@
         <button type='submit' name='enviar' value='Enviar'>Login</button>
 
         <div id="registrar_exit">
-          <p><a href="registrarse.php">Registrarse</a></p>
-          <p><a href="../../PaginaPrincipal.html">Pagina Principal</a></p>
+          <p><a href="registrarse.php">No tengo Cuenta</a></p>
+          <p><a href="../PaginaPrincipal.php">Pagina Principal</a></p>
         </div>
 
         <?php

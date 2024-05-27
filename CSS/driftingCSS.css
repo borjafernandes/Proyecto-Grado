@@ -1,0 +1,295 @@
+@media only screen and (max-width: 767px) {
+
+    #contenidoPrincipal {
+        flex-direction: column;
+    }
+
+    #articulo1,#aside {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    #articulo2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #textoARt2 {
+        order: 0; /* Volver a la posición original en pantallas pequeñas */
+    }
+
+    #box-imagenPrueba img{
+        width: 100%;
+    }
+
+}
+  
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    #articulo1,#aside {
+        width: 90%;
+    }
+
+    #articulo2 {
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    #box-imagenPrueba img{
+        width: 100%;
+    }
+
+}
+
+@font-face {
+    font-family: 'night_machine';
+    src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'WrathStyles';
+    src: url(../Recursos/Fonts/anger_styles/AngerStyles.ttf) format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #1a1a1a;
+    text-align: center;
+    font-size: 1em;
+    transition: all 1.5s ease;
+    scroll-behavior: smooth;
+    color: #fff; 
+}
+
+h1,h2,h3,h4{
+    font-family: 'night_machine';
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+p {
+    line-height: 1.8;
+    color: #ccc; 
+}
+
+#logomarca {
+    margin-left: 10px;
+}
+
+#contenidoPrincipal {
+    display: flex;
+}
+
+#contenidoGlobal {
+    background: linear-gradient(#2c2c2c, #1a1a1a); 
+}
+
+#btncambiarmodo {
+    display: none;
+}
+
+.boton-destacado {
+    background-color: #4a90e2;
+}
+
+#iconoluna {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    font-size: 2em;
+    color: #4a90e2; 
+    cursor: pointer;
+}
+
+.dark {
+    background-color: #333; 
+    color: #fff;
+    transition: all 1.5s ease;
+}
+
+#imagenEnMenu {
+    width: 380px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.carousel {
+    width: 800px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#articulo1 {
+    background-color: #333; 
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 4px solid #4a90e2; 
+    border-radius: 8px;
+    text-align: justify;
+}
+
+#aside {
+    background-color: #333;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 4px solid #4a90e2;
+    border-radius: 8px;
+    text-align: justify;
+}
+
+#articulo1 h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#aside h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#articulo1 h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#aside h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.imgcontenido2 {
+    width: 150px;
+    height: 150px;
+}
+
+#contenidosecundario {
+    background-color: #1a1a1a;
+    margin-top: 20px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+}
+
+#contenidosecundario h3 {
+    color: #a9a9a9; 
+    background-color: rgb(161, 43, 161); 
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#contenidosecundario #articulo2 p {
+    color: #333; 
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#textoARt2 {
+    order: -1;
+}
+
+#textoARt2 p {
+    margin-bottom: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(197, 41, 197);
+    color: #333;
+}
+
+#textoARt2 #listadecoches {
+    background-color: rgb(185, 17, 185);
+    margin-bottom: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#textoARt2 .listacoches {
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#articulo2 {
+    display: flex;
+    text-align: justify;
+}
+
+#box-imagenPrueba {
+    margin: 20px;
+    padding: 20px;
+}
+
+#imagencochevista {
+    border-radius: 20px;
+    width: 700px;
+    height: 350px;
+    border: 2px solid #4a90e2;
+    box-shadow: 5px 5px 10px #800080;
+}
+
+#contenidoExtra {
+    background-color: #1a1a1a; 
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.mejorescoches {
+    width: 230px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px solid #4a90e2;
+    box-shadow: 5px 5px 10px #800080;
+}
+
+#img-y_texto h3 {
+    color: #a9a9a9; 
+    margin: 5px;
+    padding: 5px;
+}
+
+#img-y_texto p {
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+}
+
+.img_ex img {
+    transition: 1s;
+}
+
+.img_ex img:hover {
+    cursor: pointer;
+    transition: 1s;
+    transform: scale(1.1);
+}
+
+.imagenesex {
+    margin-bottom: 10px;
+}

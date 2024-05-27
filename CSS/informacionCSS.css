@@ -1,8 +1,3 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-
 @font-face {
     font-family: 'night_machine';
     src: url(../Recursos/Fonts/Night\ Machine.otf) format('truetype');
@@ -13,141 +8,154 @@
     src: url(../Recursos/Fonts/anger_styles/WrathStyles.ttf) format('truetype');
 }
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
-    /* background-image: url(../Recursos/Fondos/fondo.jpg); */
-    /* background-image: linear-gradient(327deg, #dd5e91 15%, #6d23ca 39%, #00e0be 63%, #14ff00 88%); */
-    background-repeat: no-repeat;
-    background-size: cover; /*esto es para cubrir todo el cuerpo*/
-    background-attachment: fixed;/*esto es para fijar la imagen a todo el body*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7c7e80;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #7c7e80;
+    color: #ccc;
+}
+
+header h1 {
+    font-family: 'night_machine';
+    color: #000;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 section {
     display: flex;
+    flex-wrap: wrap;
     width: 600px;
     height: 430px;
-    margin: 0 auto;/*esto es para centrarlo*/
+    margin: 0 auto; /* esto es para centrarlo */
     margin-bottom: 20px;
 }
 
 section img {
     width: 0px;
-    flex-grow: 1;/*esto es para que la imagen ocupe todo el espacio que pueda*/
-    object-fit: cover;/*esto es para que cubra todo el espacio*/
-    opacity: .8;/*le bajamos un poquito la opacidad*/
-    transition: .5s ease;/*le ponemos una transicion para cada vez que pasemos el cursor por encima*/
+    flex-grow: 1; /* esto es para que la imagen ocupe todo el espacio que pueda */
+    object-fit: cover; /* esto es para que cubra todo el espacio */
+    opacity: .8; /* le bajamos un poquito la opacidad */
+    transition: .5s ease; /* le ponemos una transicion para cada vez que pasemos el cursor por encima */
 }
 
 section img:hover{
-    cursor: crosshair;/*cambiamos el tipo de cursor*/
+    cursor: crosshair; /* cambiamos el tipo de cursor */
     width: 300px;
-    opacity: 1;/*le ponemos la misma opacidad que tenia al principio*/
-    filter: contrast(120%);/*subimos el contraste de la imagen para que se vea un poco mas clara*/
+    opacity: 1; /* le ponemos la misma opacidad que tenía al principio */
+    filter: contrast(120%); /* subimos el contraste de la imagen para que se vea un poco más clara */
 }
 
-p{
-    font-size: 1.5em;
+#contenido {
+    padding: 15px;
+    color: #ccc;
+    text-align: justify;
+}
+
+#contenido h2, #contenido h4 {
+    font-family: 'night_machine';
+    color: #000;
+    text-align: center;
+}
+
+#contenido p {
+    font-size: 1rem;
     line-height: 1.5;
+    color: #333;
 }
 
-#imagenEnMenu{
-    width: 380px;
+#contenido .listas {
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: #0a0a0a;
+}
+
+#imagenEnMenu {
+    width: 100%;
+    max-width: 380px;
     height: auto;
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
+    border: 2px solid #FFA500;
 }
 
-#cabezera{
+#cabezera {
     text-align: center;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    color: #ccc;
+    background-color: #7c7e80;
 }
 
 #boton-destacado {
-    background-color: rgba(82, 20, 133, 0.767);
+    background-color: rgba(255, 165, 0, 0.767);
 }
 
-a:hover{
+a:hover {
     color: aquamarine;
 }
 
-#cabezera h1{
-    text-align: center;
-    margin-bottom: 10px;
+#contenido #informacion h2, #contenido #informacion h4 {
     font-family: 'night_machine';
-    color: rgb(56, 238, 192);
+    color: #000;
 }
 
-#all{
-    background: rgb(23, 90, 88);
-}
-
-#contenido{
-    margin-bottom: 10px;
-    text-align: justify;
-    margin: 15px;
-}
-
-#contenido #informacion h2{
-    color: black;
-}
-
-#contenido #informacion h4{
-    color: black;
-}
-
-#contenido #informacion p{
-    color: black;
-}
-
-#informacion{
+#informacion {
     margin: 10px;
-    text-align: justify;
 }
 
-/* #informacion p::first-letter{
-    color: rgb(0, 68, 255);
-    font-size: 1.5em;
-} */
-
-#informacion h2{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-#informacion h4{
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-size: 1.5em;
-}
-
-#informacion .listas{
+#informacion .listas {
     padding: 10px;
     margin-left: 20px;
     font-size: 1.2rem;
-    color: cadetblue;
+    color: #0a0a0a;
 }
 
-#footer{
-    text-align: center;
+strong {
+    font-size: 0.8em;
 }
 
-#footer p{
-    margin-top: 5px;
-    margin-bottom: 3px;
-    color: orange;
-}
 
-#footer a{
-    margin-left: 10px;
-    letter-spacing: 2px;
-    font-family: 'WrathStyles';
-    color: violet;
-}
+@media (max-width: 768px) {
 
-#footer a:visited{
-    color: rgb(20, 250, 12);
-}
+    #contenido {
+        padding: 10px;
+        text-align: center;
+    }
 
+    #contenido p {
+        font-size: 0.9rem;
+    }
+
+    #contenido .listas {
+        padding: 5px;
+        margin-left: 0;
+        font-size: 1rem;
+        list-style-position: inside;
+    }
+
+    #imagenEnMenu {
+        max-width: 100%;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    #informacion .listas {
+        padding: 5px;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
