@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../CSS/iconosBarraNavegacion.css">
     <link rel="stylesheet" href="../CSS/botonCerrarSesion.css">
     <link rel="stylesheet" href="../CSS/BuscadorCochesCSS.css">
+    <link rel="stylesheet" href="../CSS/scrollBar.css">
     <?php
         include("./modelo/conexion.php");
         include("./modelo/sesion.php");
@@ -108,17 +109,18 @@
                 <input type="text" id="searchMarca" class="form-control" placeholder="Buscar por marca...">
             </div>
             <div class="col-md-3">
-                <input type="text" id="searchTipoCombustible" class="form-control" placeholder="Buscar por tipo de combustible...">
-            </div>
-            <div class="col-md-3">
-                <input type="number" id="searchPrecio" class="form-control" placeholder="Buscar por precio...">
+                <div class="d-flex align-items-center flex-column">
+                    <label for="searchPrecioRange" id="precioValue">0€</label>
+                    <input type="range" id="searchPrecioRange" class="form-range" min="0" max="30000" step="1000" value="0" oninput="updatePrecioInput(this.value)">
+                    <input type="hidden" id="searchPrecio" value="30000">
+                </div>
             </div>
         </div>
 
         <div id="searchResults" class="row row-cols-1 row-cols-md-3 g-4"></div>
     </div>
 
-    <div class="row row-cols-5 mb-5 g-4" id="originalResults">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 mb-5 g-4" id="originalResults">
         <?php
         // Iterar sobre los resultados de la consulta y mostrarlos en tarjetas Bootstrap
         while ($resultado = mysqli_fetch_assoc($consulta)) {

@@ -64,7 +64,7 @@
                     <td><?php echo $resultado['nombre_marca']?></td>
                     <td><?php echo $resultado['modelo']?></td>
                     <td><?php echo date2string($resultado['fecha_fabricacion'])?></td>
-                    <td><?php echo $resultado['precio']?> $</td>
+                    <td><?php echo number_format($resultado['precio'], 0, '', '.')?> $</td>
                     <td><?php echo $resultado['potencia']?> CV</td>
                     <td><?php echo $resultado['combustible']?></td>
                     <td><?php echo $resultado['distintivo']?></td>

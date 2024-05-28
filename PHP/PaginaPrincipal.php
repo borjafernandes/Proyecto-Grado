@@ -185,7 +185,7 @@
 
                 <h3 class="mb-4 me-3">Ultimas Novedades</h3>
 
-                <div class="row row-cols-5 mb-5 g-4 justify-content-center" id="coches-container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 mb-5 g-4 justify-content-center" id="coches-container">
                     <?php
                     // Iterar sobre los resultados de la consulta y mostrarlos en tarjetas Bootstrap
                     while ($resultado = mysqli_fetch_assoc($consulta)) {

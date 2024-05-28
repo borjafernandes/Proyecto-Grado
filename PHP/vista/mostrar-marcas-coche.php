@@ -54,34 +54,34 @@
     </style>
 </head>
 <body>
-<div class="form-container">
-    <div class="form-title">Buscar por Marcas</div>
-    <form class="form" action="mostrar_coches.php" method="get">
-        <select class="form-select" name="id_marca">
-            <?php
-            include("../modelo/conexion.php");
+    <div class="form-container">
+        <div class="form-title">Buscar por Marcas</div>
+        <form class="form" action="mostrar_coches.php" method="get">
+            <select class="form-select" name="id_marca">
+                <?php
+                include("../modelo/conexion.php");
 
-            if (isset($_GET['id_marca'])) {
-                $idMarca = $_GET['id_marca'];
-            } else {
-                $idMarca = "todas";
-            }
+                if (isset($_GET['id_marca'])) {
+                    $idMarca = $_GET['id_marca'];
+                } else {
+                    $idMarca = "todas";
+                }
 
-            $consulta = "SELECT id, nombre FROM marca";
-            $resultado = mysqli_query($conexion, $consulta);
+                $consulta = "SELECT id, nombre FROM marca";
+                $resultado = mysqli_query($conexion, $consulta);
 
-            echo "<option value='todas'>Todas</option>";
+                echo "<option value='todas'>Todas</option>";
 
-            while ($fila = mysqli_fetch_assoc($resultado)) {
-                echo "<option value='{$fila['id']}'";
-                if ($fila['id'] == $idMarca) echo " selected";
-                echo ">{$fila['nombre']}</option>";
-            }
+                while ($fila = mysqli_fetch_assoc($resultado)) {
+                    echo "<option value='{$fila['id']}'";
+                    if ($fila['id'] == $idMarca) echo " selected";
+                    echo ">{$fila['nombre']}</option>";
+                }
 
-            ?>
-        </select>
-        <input class="form-submit" type="submit" value="Filtrar" name="filtrar" />
-    </form>
-</div>
+                ?>
+            </select>
+            <input class="form-submit" type="submit" value="Filtrar" name="filtrar" />
+        </form>
+    </div>
 </body>
 </html>
