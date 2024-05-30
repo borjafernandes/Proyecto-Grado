@@ -35,7 +35,7 @@
                                 <div id="submenu">
                                     <p><a href="../Cursos.html">Cursos</a></p>
                                     <p><a href="Informacion.php">Informacion</a></p>
-                                    <p><a href="PaginaPrincipal.php">Pagina Principal</a></p>
+                                    <p><a href="index.php">Pagina Principal</a></p>
                                     <p><a href="Contacto.php">Contacto</a></p>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                     <a class="dropdown-item" href="../Cursos.html">Cursos</a>
                                     <a class="dropdown-item" href="Informacion.php">Informacion</a>
-                                    <a class="dropdown-item" href="PaginaPrincipal.php">Pagina Principal</a>
+                                    <a class="dropdown-item" href="index.php">Pagina Principal</a>
                                     <a class="dropdown-item" href="Contacto.php">Contacto</a>
                                 </div>
                             </li>

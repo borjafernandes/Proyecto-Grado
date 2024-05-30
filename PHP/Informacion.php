@@ -38,7 +38,7 @@
                       Sobre Nosotros
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="PaginaPrincipal.php" target="_parent">Pagina Principal</a></li>
+                      <li><a class="dropdown-item" href="index.php" target="_parent">Pagina Principal</a></li>
                       <li>
                           <hr class="dropdown-divider">
                         </li>

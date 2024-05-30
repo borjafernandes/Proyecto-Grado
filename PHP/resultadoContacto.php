@@ -37,7 +37,7 @@
         echo "</td></tr>";
         echo "</table>";
 
-        echo "Volver a <a href='Contacto.php'>Contacto</a> o a la <a href='PaginaPrincipal.php'>Pagina Principal</a>";
+        echo "Volver a <a href='Contacto.php'>Contacto</a> o a la <a href='index.php'>Pagina Principal</a>";
     } else {
         echo "<p>Error: No se han recibido datos del formulario.</p>";
     }

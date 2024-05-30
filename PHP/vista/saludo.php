@@ -15,7 +15,7 @@
     <header>
 
         <div class="d-flex flex-md-row align-items-center justify-content-center mb-4">
-            <a href="./PaginaPrincipal.php"><img src="../Recursos/Iconos/rueda-de-fuego.png" alt="logo" id="logomarca"></a>
+            <a href="./index.php"><img src="../Recursos/Iconos/rueda-de-fuego.png" alt="logo" id="logomarca"></a>
             <h1 class="text-center mx-md-auto">The University of Driving</h1> 
         </div>
 

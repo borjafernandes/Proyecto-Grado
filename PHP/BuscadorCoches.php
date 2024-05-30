@@ -46,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav pb-3 px-auto">
                     <li style="--i:#a955ff;--j:#ea51ff;">
-                        <a href="./PaginaPrincipal.php">
+                        <a href="./index.php">
                             <span class="icon">🏠</span>
                             <span class="title">Página Principal</span>
                         </a>

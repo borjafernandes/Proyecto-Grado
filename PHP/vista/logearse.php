@@ -31,7 +31,7 @@
 
         <div id="registrar_exit">
           <p><a href="registrarse.php">No tengo Cuenta</a></p>
-          <p><a href="../PaginaPrincipal.php">Pagina Principal</a></p>
+          <p><a href="../index.php">Pagina Principal</a></p>
         </div>
 
         <?php

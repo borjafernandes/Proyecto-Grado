@@ -14,7 +14,7 @@
     funione todo lo de boostrap-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Links de CSS -->
-    <link rel="stylesheet" href="../CSS/PaginaPrincipal.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/DarkMode.css">
     <link rel="stylesheet" href="../CSS/submenu.css">
     <link rel="stylesheet" href="../CSS/footer.css">

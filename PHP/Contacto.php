@@ -88,7 +88,7 @@ button:hover svg {
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li><a class="dropdown-item" href="PaginaPrincipal.php" target="_parent">Pagina Principal</a></li>
+                <li><a class="dropdown-item" href="index.php" target="_parent">Pagina Principal</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>

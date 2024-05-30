@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // echo '<br><a href="../vista/registrarse.php">Volver a la pagina Anterior</a>';
     
     header("Location: ../vista/logearse.php?");
-    // header("Location: ../PaginaPrincipal.php?");
+    // header("Location: ../index.php?");
     exit(); 
 } 
 else { 

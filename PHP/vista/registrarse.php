@@ -35,7 +35,7 @@
 
         <div id="registrar_exit">
           <p><a href="logearse.php">Ya tengo Cuenta</a></p>
-          <p><a href="../PaginaPrincipal.php">Pagina Inicial</a></p>
+          <p><a href="../index.php">Pagina Inicial</a></p>
         </div>
 
         <?php
